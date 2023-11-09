@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:padding="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/quiz_dialog_bg"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/anim"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_45sdp"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/sadface" />
+
+        <TextView
+            android:id="@+id/failMSG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/anim"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textAlignment="center"
+            android:fontFamily="@font/garet_black"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            android:layout_gravity="center_horizontal"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/okBtnFail"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_below="@id/failMSG"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="Ok"
+            android:textColor="@color/black"
+            android:fontFamily="@font/garet_black"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_10ssp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Baybayin"
+        tools:targetApi="31">
+        <activity
+            android:name=".SpotTheSymbols.HardLevel"
+            android:exported="false" />
+        <activity
+            android:name=".SpotTheSymbols.ModerateLevel"
+            android:exported="false" />
+        <activity
+            android:name=".GaBay"
+            android:exported="false" />
+        <activity
+            android:name=".Developer"
+            android:exported="false" />
+        <activity
+            android:name=".SpotTheSymbols.EasyLevel"
+            android:exported="false" />
+        <activity
+            android:name=".SpotTheSymbol"
+            android:exported="false" />
+        <activity
+            android:name=".WordTrace"
+            android:exported="false" />
+        <activity
+            android:name=".Quizzes"
+            android:exported="false" />
+        <activity
+            android:name=".Games"
+            android:exported="false" />
+        <activity
+            android:name=".History"
+            android:exported="false" />
+        <activity
+            android:name=".Translator"
+            android:exported="false" />
+        <activity
+            android:name=".LearnPage"
+            android:exported="false" />
+        <activity
+            android:name=".MainDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".MainPage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

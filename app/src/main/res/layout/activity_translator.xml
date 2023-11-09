@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpic"
+    android:orientation="vertical"
+    tools:context=".Translator">
+
+    <!-- Dark Overlay -->
+    <View
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:id="@+id/darkOverlay"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_alignParentTop="true"
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:background="@android:color/transparent"
+                app:tint="#f4f4f4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Translate"
+                        android:textSize="@dimen/_22ssp"
+                        android:fontFamily="@font/garet_black"
+                        android:textColor="#f4f4f4"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Magsalin ng salita sa baybayin"
+                        android:textSize="@dimen/_12ssp"
+                        android:fontFamily="@font/garet"
+                        android:textColor="#f4f4f4"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Magsalin ng salita sa baybayin"
+                        android:textSize="@dimen/_8ssp"
+                        android:fontFamily="@font/tagalogstylized"
+                        android:textColor="#f4f4f4"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:src="@drawable/translatelogo"
+                    android:contentDescription="@string/app_name"
+                    app:tint="#f4f4f4" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_below="@id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/translatedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a"
+            android:textSize="60sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/garet_black"
+            android:textColor="@color/wht"/>
+
+        <EditText
+            android:id="@+id/tagalogText"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:background="@drawable/inputbg"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:hint="Enter tagalog text"
+            android:fontFamily="@font/garet"
+            android:textColorHint="#BABABA"
+            android:textColor="@color/wht"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

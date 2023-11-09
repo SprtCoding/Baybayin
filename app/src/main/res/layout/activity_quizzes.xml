@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bgpic"
+    tools:context=".Quizzes">
+
+    <!-- Dark Overlay -->
+    <View
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:id="@+id/darkOverlay"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        app:lottie_rawRes="@raw/confitti"
+        android:id="@+id/confetti"
+        android:translationZ="1dp"
+        android:visibility="gone"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/hero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_15sdp">
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:background="@android:color/transparent"
+                app:tint="@color/wht" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_220sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quizzes"
+                        android:textSize="@dimen/_25ssp"
+                        android:fontFamily="@font/garet_black"
+                        android:textColor="@color/wht"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Subukin mo"
+                        android:textSize="@dimen/_12ssp"
+                        android:fontFamily="@font/garet"
+                        android:textColor="@color/wht"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quizzes"
+                        android:textSize="@dimen/_10ssp"
+                        android:fontFamily="@font/tagalogstylized"
+                        android:textColor="@color/wht"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/game"
+                    android:contentDescription="@string/app_name"
+                    app:tint="@color/wht" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/hero"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:id="@+id/questionCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0/0"
+                        android:textSize="@dimen/_15ssp"
+                        android:fontFamily="@font/garet_black"
+                        android:textColor="@color/wht"/>
+
+                    <TextView
+                        android:id="@+id/timerCount"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00:00"
+                        android:textSize="@dimen/_15ssp"
+                        android:fontFamily="@font/garet_black"
+                        android:textColor="@color/wht"
+                        app:drawableStartCompat="@drawable/baseline_timer_24"
+                        app:drawableTint="@color/wht" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="@dimen/_15ssp"
+                        android:fontFamily="@font/garet_black"
+                        android:textColor="@color/wht"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_20sdp"
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardBackgroundColor="@color/wht">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp">
+
+                        <TextView
+                            android:id="@+id/questions"
+                            android:textAlignment="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subukin mo"
+                            android:textSize="@dimen/_15ssp"
+                            android:fontFamily="@font/garet_black"
+                            android:textColor="#E23744"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <RadioGroup
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:id="@+id/rdbGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/option1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Option 1"
+                        android:textColor="@color/wht"
+                        android:fontFamily="@font/garet"
+                        android:textSize="@dimen/_13ssp"
+                        android:buttonTint="@color/wht"
+                        android:gravity="center_vertical"/>
+
+                    <RadioButton
+                        android:id="@+id/option2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Option 1"
+                        android:textColor="@color/wht"
+                        android:fontFamily="@font/garet"
+                        android:textSize="@dimen/_13ssp"
+                        android:buttonTint="@color/wht"
+                        android:gravity="center_vertical"/>
+
+                    <RadioButton
+                        android:id="@+id/option3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Option 1"
+                        android:textColor="@color/wht"
+                        android:fontFamily="@font/garet"
+                        android:textSize="@dimen/_13ssp"
+                        android:buttonTint="@color/wht"
+                        android:gravity="center_vertical"/>
+
+                </RadioGroup>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/garet_black"
+                    android:textSize="@dimen/_10ssp"
+                    android:textColor="@color/black"
+                    app:cornerRadius="@dimen/_30sdp"
+                    android:id="@+id/submitNextBtn"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

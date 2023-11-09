@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpic"
+    tools:context=".SpotTheSymbol">
+
+    <!-- Dark Overlay -->
+    <View
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:id="@+id/darkOverlay"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/hero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_15sdp">
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:background="@android:color/transparent"
+                app:tint="@color/wht" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_220sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Spot the Symbol"
+                        android:textSize="@dimen/_22ssp"
+                        android:fontFamily="@font/garet_black"
+                        android:textColor="@color/wht"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Level Categories"
+                        android:textSize="@dimen/_12ssp"
+                        android:fontFamily="@font/garet"
+                        android:textColor="@color/wht"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Spot the Symbol"
+                        android:textSize="@dimen/_10ssp"
+                        android:fontFamily="@font/tagalogstylized"
+                        android:textColor="@color/wht"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/tap"
+                    android:contentDescription="@string/app_name"
+                    app:tint="@color/wht" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_below="@id/hero"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/_20sdp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/easy_btn"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            app:cardCornerRadius="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Easy"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:fontFamily="@font/garet_black"
+                android:textSize="@dimen/_15ssp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/moderate_btn"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            app:cardCornerRadius="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moderate"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:fontFamily="@font/garet_black"
+                android:textSize="@dimen/_15ssp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hard_btn"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            app:cardCornerRadius="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hard"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:fontFamily="@font/garet_black"
+                android:textSize="@dimen/_15ssp"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

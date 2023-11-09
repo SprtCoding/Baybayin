@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bgpic"
+    tools:context=".MainDashboard">
+
+    <!-- Dark Overlay -->
+    <View
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:id="@+id/darkOverlay"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#E23744"
+        android:id="@+id/hero">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/_20sdp">
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Baybayin App!"
+                android:fontFamily="@font/garet_black"
+                android:textAlignment="center"
+                android:textSize="@dimen/_17ssp"
+                android:textColor="@color/wht"/>
+
+            <ImageView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:src="@drawable/logowhite"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_name"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:backgroundTint="@color/wht"
+                android:text="Simulan"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="#E23744"
+                android:textAllCaps="false"
+                android:fontFamily="@font/garet_black"
+                app:cornerRadius="@dimen/_20sdp"
+                android:id="@+id/learnHeroBtn"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/below_hero"
+        android:layout_below="@id/hero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:src="@drawable/baseline_menu_24"
+            app:tint="@color/wht"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:fontFamily="@font/garet_black"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/wht"/>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/below_hero"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_20sdp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/devCard"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/wht">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        app:cardBackgroundColor="#4CB150"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:src="@drawable/coding"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/app_name" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="@dimen/_15sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Developers"
+                            android:letterSpacing=".2"
+                            android:fontFamily="@font/garet_black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="#656565"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Developers"
+                            android:fontFamily="@font/tagalogstylized"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="#656565"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/historyCard"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/wht">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        app:cardBackgroundColor="#CC9204"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:src="@drawable/historylogo"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/app_name" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="@dimen/_15sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="History"
+                            android:letterSpacing=".2"
+                            android:fontFamily="@font/garet_black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="#656565"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="History"
+                            android:fontFamily="@font/tagalogstylized"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="#656565"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/learnCard"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/wht">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        app:cardBackgroundColor="#04CC75"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:src="@drawable/brain"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/app_name" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="@dimen/_15sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Learn"
+                            android:letterSpacing=".2"
+                            android:fontFamily="@font/garet_black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="#656565"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Learn"
+                            android:fontFamily="@font/tagalogstylized"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="#656565"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gamesCard"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/wht">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        app:cardBackgroundColor="#33D7E8"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:src="@drawable/game"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/app_name" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="@dimen/_15sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Games"
+                            android:letterSpacing=".2"
+                            android:fontFamily="@font/garet_black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="#656565"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Games"
+                            android:fontFamily="@font/tagalogstylized"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="#656565"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/translateCard"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/wht">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        app:cardBackgroundColor="#E23744"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:src="@drawable/translatelogo"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/app_name" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="@dimen/_15sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Translate"
+                            android:letterSpacing=".2"
+                            android:fontFamily="@font/garet_black"
+                            android:textSize="@dimen/_12ssp"
+                            android:textStyle="bold"
+                            android:textColor="#656565"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Translate"
+                            android:fontFamily="@font/tagalogstylized"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="#656565"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

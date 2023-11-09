@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bgpic"
+    android:backgroundTint="#000000"
+    android:backgroundTintMode="screen"
+    android:orientation="vertical"
+    tools:context=".History">
+
+    <!-- Dark Overlay -->
+    <View
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:id="@+id/darkOverlay"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_alignParentTop="true"
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:background="@android:color/transparent"
+                app:tint="@color/wht" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="History"
+                        android:textSize="@dimen/_22ssp"
+                        android:fontFamily="@font/garet_black"
+                        android:textColor="@color/wht"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kasaysayan ng Wikang Pambansa"
+                        android:textSize="@dimen/_10ssp"
+                        android:fontFamily="@font/garet"
+                        android:textColor="@color/wht"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="History"
+                        android:textSize="@dimen/_10ssp"
+                        android:fontFamily="@font/tagalogstylized"
+                        android:textColor="@color/wht"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/historylogo"
+                    android:contentDescription="@string/app_name"
+                    app:tint="@color/wht" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kasaysayan_ng_wikang_pambansa"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/garet"
+                android:textColor="@color/wht"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/panahon_ng_katutubo"
+                android:textSize="@dimen/_20ssp"
+                android:fontFamily="@font/garet_black"
+                android:textColor="@color/wht"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/panahon"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/garet"
+                android:textColor="@color/wht"/>
+
+            <TextView
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_1_teorya_ng_pandrayuhan"
+                android:textSize="@dimen/_15ssp"
+                android:fontFamily="@font/garet_black"
+                android:textColor="@color/wht"/>
+
+            <TextView
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/numberOne"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/garet"
+                android:textColor="@color/wht"/>
+
+            <TextView
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/drfox"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/garet"
+                android:textColor="@color/wht"/>
+
+            <TextView
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_2_teorya_ng_pandarayuhan_mula_sa_rehiyong_autronesyano"
+                android:textSize="@dimen/_15ssp"
+                android:fontFamily="@font/garet_black"
+                android:textColor="@color/wht"/>
+
+            <TextView
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/isla"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/garet"
+                android:textColor="@color/wht"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ayonkay"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/garet"
+                android:textColor="@color/wht"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/angbaybayin"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/garet"
+                android:textColor="@color/wht"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
