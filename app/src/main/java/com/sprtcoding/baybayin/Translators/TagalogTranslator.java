@@ -96,10 +96,10 @@ public class TagalogTranslator {
         tagalogToBaybayinMapping.put("pu", "ᜉᜓ");
 
         tagalogToBaybayinMapping.put("ra", "ᜇ");
-        tagalogToBaybayinMapping.put("re","ᜒ\u170Dᜒ");
-        tagalogToBaybayinMapping.put("ri", "ᜒ\u170Dᜒᜒᜒ");
-        tagalogToBaybayinMapping.put("ro", "ᜍᜓ");
-        tagalogToBaybayinMapping.put("ru", "ᜍᜓ");
+        tagalogToBaybayinMapping.put("re","ᜇᜒ");
+        tagalogToBaybayinMapping.put("ri","ᜇᜒ");
+        tagalogToBaybayinMapping.put("ro", "ᜇᜓᜓ");
+        tagalogToBaybayinMapping.put("ru", "ᜇᜓᜓ");
 
         tagalogToBaybayinMapping.put("ta", "ᜆ");
         tagalogToBaybayinMapping.put("te", "ᜆᜒᜒ");
