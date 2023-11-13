@@ -26,10 +26,12 @@ import com.sprtcoding.baybayin.Quiz.QuizDbHelper;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 public class Quizzes extends AppCompatActivity {
     public static final String EXTRA_SCORE = "extraScore";
+    private ImageButton _backBtn;
     private TextView _timerCountdown, _questionCount, _viewScore, _questions, _successMSG, _failMSG;
     private LottieAnimationView _confitti;
     private RadioGroup _rbGroup;
@@ -71,6 +73,11 @@ public class Quizzes extends AppCompatActivity {
             }else {
                 showNextQuestion();
             }
+        });
+
+        _backBtn.setOnClickListener(view -> {
+            finish();
+            countDownTimer.cancel();
         });
     }
 
@@ -181,7 +188,7 @@ public class Quizzes extends AppCompatActivity {
         _no_btn = timerDialog.findViewById(R.id.no_btn);
         final AlertDialog timersDialog = timerDialogBuilder.create();
 
-        timersDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Objects.requireNonNull(timersDialog.getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         timersDialog.setCanceledOnTouchOutside(false);
 
         _yes_btn.setOnClickListener(view -> {
@@ -237,7 +244,7 @@ public class Quizzes extends AppCompatActivity {
         _okBtnFail = failAlertDialog.findViewById(R.id.okBtnFail);
         final AlertDialog failDialog = failAlertDialogBuilder.create();
 
-        failDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Objects.requireNonNull(failDialog.getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         failDialog.setCanceledOnTouchOutside(false);
 
         _okBtnFail.setOnClickListener(view -> {
@@ -252,13 +259,13 @@ public class Quizzes extends AppCompatActivity {
 
         if(score <= 5) {
             failDialog.show();
-            _failMSG.setText("Nice Try! you can improve your score anytime.");
+            _failMSG.setText("Nice Try! Maaari mong mapabuti ang iyong puntos anumang oras.");
         } else {
             _confitti.setVisibility(View.VISIBLE);
             _confitti.playAnimation();
             _confitti.loop(true);
             successDialog.show();
-            _successMSG.setText("Excellent! you a great job.");
+            _successMSG.setText("Napakaganda! ang galing mo.");
         }
     }
 
@@ -273,5 +280,13 @@ public class Quizzes extends AppCompatActivity {
         _rb3 = findViewById(R.id.option3);
         _btnSubmitNext = findViewById(R.id.submitNextBtn);
         _confitti = findViewById(R.id.confetti);
+        _backBtn = findViewById(R.id.backBtn);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+        countDownTimer.cancel();
     }
 }

@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:text="0/0"
                 android:textSize="@dimen/_15ssp"
-                android:fontFamily="@font/garet_black"
+                android:fontFamily="@font/poppins_bold"
                 android:textColor="@color/wht"/>
 
             <TextView
@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:text="00:00"
                 android:textSize="@dimen/_15ssp"
-                android:fontFamily="@font/garet_black"
+                android:fontFamily="@font/poppins_bold"
                 android:textColor="@color/wht"
                 app:drawableStartCompat="@drawable/baseline_timer_24"
                 app:drawableTint="@color/wht" />
@@ -66,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:text="0"
                 android:textSize="@dimen/_15ssp"
-                android:fontFamily="@font/garet_black"
+                android:fontFamily="@font/poppins_bold"
                 android:textColor="@color/wht"/>
 
         </LinearLayout>
@@ -93,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:text="Find this Symbol"
                 android:textColor="@color/white"
-                android:fontFamily="@font/garet"
+                android:fontFamily="@font/poppins_medium"
                 android:textSize="@dimen/_20ssp"
                 android:letterSpacing=".1"/>
 
@@ -476,7 +476,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
                 app:cornerRadius="@dimen/_25sdp"
-                android:fontFamily="@font/garet_black"
+                android:fontFamily="@font/poppins_bold"
                 android:textSize="@dimen/_13ssp"
                 android:backgroundTint="@color/green"
                 android:layout_marginStart="@dimen/_10sdp"

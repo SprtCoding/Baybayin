@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:text="0/0"
                 android:textSize="@dimen/_15ssp"
-                android:fontFamily="@font/garet_black"
+                android:fontFamily="@font/poppins_bold"
                 android:textColor="@color/wht"/>
 
             <TextView
@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:text="00:00"
                 android:textSize="@dimen/_15ssp"
-                android:fontFamily="@font/garet_black"
+                android:fontFamily="@font/poppins_bold"
                 android:textColor="@color/wht"
                 app:drawableStartCompat="@drawable/baseline_timer_24"
                 app:drawableTint="@color/wht" />
@@ -66,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:text="0"
                 android:textSize="@dimen/_15ssp"
-                android:fontFamily="@font/garet_black"
+                android:fontFamily="@font/poppins_bold"
                 android:textColor="@color/wht"/>
 
         </LinearLayout>
@@ -93,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:text="Find this Symbol"
                 android:textColor="@color/white"
-                android:fontFamily="@font/garet"
+                android:fontFamily="@font/poppins_medium"
                 android:textSize="@dimen/_20ssp"
                 android:letterSpacing=".1"/>
 
@@ -106,7 +106,7 @@
                 android:textColor="@color/white"
                 android:layout_gravity="center"
                 android:textSize="120sp"
-                android:fontFamily="@font/garet_black"/>
+                android:fontFamily="@font/poppins_bold"/>
 
             <GridLayout
                 android:scrollbars="vertical"
@@ -139,7 +139,7 @@
                         android:layout_height="@dimen/_40sdp"
                         android:gravity="center"
                         android:textAlignment="center"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="B"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_20ssp"/>
@@ -167,7 +167,7 @@
                         android:layout_height="@dimen/_40sdp"
                         android:gravity="center"
                         android:textAlignment="center"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="A"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_20ssp"/>
@@ -195,7 +195,7 @@
                         android:layout_height="@dimen/_40sdp"
                         android:gravity="center"
                         android:textAlignment="center"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="W"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_20ssp"/>
@@ -223,7 +223,7 @@
                         android:layout_height="@dimen/_40sdp"
                         android:gravity="center"
                         android:textAlignment="center"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="R"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_20ssp"/>
@@ -253,7 +253,7 @@
                         android:layout_height="@dimen/_40sdp"
                         android:gravity="center"
                         android:textAlignment="center"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="T"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_20ssp"/>
@@ -281,7 +281,7 @@
                         android:layout_height="@dimen/_40sdp"
                         android:gravity="center"
                         android:textAlignment="center"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="Y"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_20ssp"/>
@@ -309,7 +309,7 @@
                         android:layout_height="@dimen/_40sdp"
                         android:gravity="center"
                         android:textAlignment="center"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="E"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_20ssp"/>
@@ -337,7 +337,7 @@
                         android:layout_height="@dimen/_40sdp"
                         android:gravity="center"
                         android:textAlignment="center"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="U"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_20ssp"/>
@@ -367,7 +367,7 @@
                         android:layout_height="@dimen/_40sdp"
                         android:gravity="center"
                         android:textAlignment="center"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="I"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_20ssp"/>
@@ -395,7 +395,7 @@
                         android:layout_height="@dimen/_40sdp"
                         android:gravity="center"
                         android:textAlignment="center"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="P"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_20ssp"/>
@@ -423,7 +423,7 @@
                         android:layout_height="@dimen/_40sdp"
                         android:gravity="center"
                         android:textAlignment="center"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="M"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_20ssp"/>
@@ -451,7 +451,7 @@
                         android:layout_height="@dimen/_40sdp"
                         android:gravity="center"
                         android:textAlignment="center"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="N"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_20ssp"/>
@@ -481,7 +481,7 @@
                         android:layout_height="@dimen/_40sdp"
                         android:gravity="center"
                         android:textAlignment="center"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="I"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_20ssp"/>
@@ -509,7 +509,7 @@
                         android:layout_height="@dimen/_40sdp"
                         android:gravity="center"
                         android:textAlignment="center"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="P"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_20ssp"/>
@@ -537,7 +537,7 @@
                         android:layout_height="@dimen/_40sdp"
                         android:gravity="center"
                         android:textAlignment="center"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="M"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_20ssp"/>
@@ -565,7 +565,7 @@
                         android:layout_height="@dimen/_40sdp"
                         android:gravity="center"
                         android:textAlignment="center"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="N"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_20ssp"/>
@@ -576,11 +576,11 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/submitBtn"
-                android:text="Submit"
+                android:text="Ipasa"
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
                 app:cornerRadius="@dimen/_25sdp"
-                android:fontFamily="@font/garet_black"
+                android:fontFamily="@font/poppins_bold"
                 android:textSize="@dimen/_13ssp"
                 android:backgroundTint="@color/green"
                 android:layout_marginStart="@dimen/_10sdp"

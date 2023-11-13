@@ -7,11 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.google.android.material.button.MaterialButton;
 import com.sprtcoding.baybayin.Loading.LoadingDialog;
 
 public class MainDashboard extends AppCompatActivity {
-    private MaterialButton _learnHeroBtn;
     private LoadingDialog _loadingDialog;
     private CardView _translateCard, _devCard, _historyCard, _learnCard, _gamesCard;
 
@@ -29,17 +27,6 @@ public class MainDashboard extends AppCompatActivity {
             Runnable runnable = () -> {
                 _loadingDialog.dismiss();
                 Intent i = new Intent(this, History.class);
-                startActivity(i);
-            };
-            handler.postDelayed(runnable, 2000);
-        });
-
-        _learnHeroBtn.setOnClickListener(view -> {
-            _loadingDialog.show();
-            Handler handler = new Handler();
-            Runnable runnable = () -> {
-                _loadingDialog.dismiss();
-                Intent i = new Intent(this, LearnPage.class);
                 startActivity(i);
             };
             handler.postDelayed(runnable, 2000);
@@ -91,7 +78,6 @@ public class MainDashboard extends AppCompatActivity {
     }
 
     private void _var() {
-        _learnHeroBtn = findViewById(R.id.learnHeroBtn);
         _translateCard = findViewById(R.id.translateCard);
         _learnCard = findViewById(R.id.learnCard);
         _historyCard = findViewById(R.id.historyCard);

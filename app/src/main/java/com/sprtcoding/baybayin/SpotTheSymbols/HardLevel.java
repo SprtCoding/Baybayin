@@ -26,6 +26,7 @@ import com.sprtcoding.baybayin.R;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 public class HardLevel extends AppCompatActivity {
@@ -758,17 +759,17 @@ public class HardLevel extends AppCompatActivity {
 
         final AlertDialog testCompletedDialog = testCompleteDialogBuilder.create();
 
-        testCompletedDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Objects.requireNonNull(testCompletedDialog.getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         testCompletedDialog.setCanceledOnTouchOutside(false);
 
         total_score.setText(String.valueOf(score));
 
         if(score <= 3) {
-            score_text.setText("Oh no! you have a lowest score!");
+            score_text.setText("Oh hindi! ikaw ay may pinakamababang iskor!");
             anim.setAnimation(R.raw.sadface);
             anim.playAnimation();
         }else {
-            score_text.setText("You have a Highest Score. You are great!");
+            score_text.setText("Mayroon kang Pinakamataas na Score. Magaling ka!");
             anim.setAnimation(R.raw.congrats);
             anim.playAnimation();
         }

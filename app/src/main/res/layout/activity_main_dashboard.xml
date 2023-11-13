@@ -35,33 +35,23 @@
             android:padding="@dimen/_20sdp">
 
             <TextView
-                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Welcome to Baybayin App!"
-                android:fontFamily="@font/garet_black"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Maligayang pag dating sa aplikasyon ng baybayin!"
                 android:textAlignment="center"
-                android:textSize="@dimen/_17ssp"
-                android:textColor="@color/wht"/>
+                android:letterSpacing=".1"
+                android:textColor="@color/wht"
+                android:textSize="@dimen/_17ssp" />
 
             <ImageView
+                android:layout_marginTop="20dp"
                 android:layout_width="@dimen/_60sdp"
                 android:layout_height="@dimen/_60sdp"
                 android:src="@drawable/logowhite"
                 android:layout_gravity="center_horizontal"
                 android:contentDescription="@string/app_name"/>
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/_130sdp"
-                android:layout_height="@dimen/_40sdp"
-                android:backgroundTint="@color/wht"
-                android:text="Simulan"
-                android:textSize="@dimen/_10ssp"
-                android:textColor="#E23744"
-                android:textAllCaps="false"
-                android:fontFamily="@font/garet_black"
-                app:cornerRadius="@dimen/_20sdp"
-                android:id="@+id/learnHeroBtn"/>
 
         </LinearLayout>
 
@@ -90,7 +80,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Menu"
-            android:fontFamily="@font/garet_black"
+            android:fontFamily="@font/poppins_medium"
             android:textSize="@dimen/_16ssp"
             android:textColor="@color/wht"/>
 
@@ -110,69 +100,7 @@
             android:padding="@dimen/_20sdp">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/devCard"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_80sdp"
-                app:cardCornerRadius="@dimen/_10sdp"
-                app:cardBackgroundColor="@color/wht">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:padding="@dimen/_10sdp">
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="@dimen/_60sdp"
-                        android:layout_height="@dimen/_60sdp"
-                        app:cardBackgroundColor="#4CB150"
-                        app:cardCornerRadius="@dimen/_10sdp"
-                        android:layout_gravity="center_vertical">
-
-                        <ImageView
-                            android:layout_width="@dimen/_40sdp"
-                            android:layout_height="@dimen/_40sdp"
-                            android:src="@drawable/coding"
-                            android:scaleType="fitCenter"
-                            android:layout_gravity="center"
-                            android:contentDescription="@string/app_name" />
-
-                    </androidx.cardview.widget.CardView>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_gravity="center_vertical"
-                        android:paddingStart="@dimen/_15sdp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Developers"
-                            android:letterSpacing=".2"
-                            android:fontFamily="@font/garet_black"
-                            android:textStyle="bold"
-                            android:textSize="@dimen/_12ssp"
-                            android:textColor="#656565"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Developers"
-                            android:fontFamily="@font/tagalogstylized"
-                            android:textSize="@dimen/_12ssp"
-                            android:textColor="#656565"/>
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
                 android:id="@+id/historyCard"
-                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_80sdp"
                 app:cardCornerRadius="@dimen/_10sdp"
@@ -211,9 +139,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="History"
+                            android:text="Kasaysayan"
                             android:letterSpacing=".2"
-                            android:fontFamily="@font/garet_black"
+                            android:fontFamily="@font/poppins_semibold"
                             android:textStyle="bold"
                             android:textSize="@dimen/_12ssp"
                             android:textColor="#656565"/>
@@ -221,7 +149,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="History"
+                            android:text="Kasaysayan"
                             android:fontFamily="@font/tagalogstylized"
                             android:textSize="@dimen/_12ssp"
                             android:textColor="#656565"/>
@@ -273,9 +201,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Learn"
+                            android:text="Matuto"
                             android:letterSpacing=".2"
-                            android:fontFamily="@font/garet_black"
+                            android:fontFamily="@font/poppins_semibold"
                             android:textStyle="bold"
                             android:textSize="@dimen/_12ssp"
                             android:textColor="#656565"/>
@@ -283,69 +211,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Learn"
-                            android:fontFamily="@font/tagalogstylized"
-                            android:textSize="@dimen/_12ssp"
-                            android:textColor="#656565"/>
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/gamesCard"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_80sdp"
-                app:cardCornerRadius="@dimen/_10sdp"
-                app:cardBackgroundColor="@color/wht">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:padding="@dimen/_10sdp">
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="@dimen/_60sdp"
-                        android:layout_height="@dimen/_60sdp"
-                        app:cardBackgroundColor="#33D7E8"
-                        app:cardCornerRadius="@dimen/_10sdp"
-                        android:layout_gravity="center_vertical">
-
-                        <ImageView
-                            android:layout_width="@dimen/_40sdp"
-                            android:layout_height="@dimen/_40sdp"
-                            android:src="@drawable/game"
-                            android:scaleType="fitCenter"
-                            android:layout_gravity="center"
-                            android:contentDescription="@string/app_name" />
-
-                    </androidx.cardview.widget.CardView>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_gravity="center_vertical"
-                        android:paddingStart="@dimen/_15sdp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Games"
-                            android:letterSpacing=".2"
-                            android:fontFamily="@font/garet_black"
-                            android:textStyle="bold"
-                            android:textSize="@dimen/_12ssp"
-                            android:textColor="#656565"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Games"
+                            android:text="Matuto"
                             android:fontFamily="@font/tagalogstylized"
                             android:textSize="@dimen/_12ssp"
                             android:textColor="#656565"/>
@@ -397,9 +263,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Translate"
+                            android:text="Tagasalin"
                             android:letterSpacing=".2"
-                            android:fontFamily="@font/garet_black"
+                            android:fontFamily="@font/poppins_semibold"
                             android:textSize="@dimen/_12ssp"
                             android:textStyle="bold"
                             android:textColor="#656565"/>
@@ -407,7 +273,131 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Translate"
+                            android:text="Tagasalin"
+                            android:fontFamily="@font/tagalogstylized"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="#656565"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gamesCard"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/wht">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        app:cardBackgroundColor="#33D7E8"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:src="@drawable/game"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/app_name" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="@dimen/_15sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Laro"
+                            android:letterSpacing=".2"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="#656565"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Laro"
+                            android:fontFamily="@font/tagalogstylized"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="#656565"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/devCard"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/wht">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        app:cardBackgroundColor="#4CB150"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:src="@drawable/coding"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/app_name" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="@dimen/_15sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nagdebelop"
+                            android:letterSpacing=".2"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="#656565"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nagdebelop"
                             android:fontFamily="@font/tagalogstylized"
                             android:textSize="@dimen/_12ssp"
                             android:textColor="#656565"/>

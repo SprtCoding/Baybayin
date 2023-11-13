@@ -53,9 +53,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Word Trace"
-                        android:textSize="@dimen/_22ssp"
-                        android:fontFamily="@font/garet_black"
+                        android:text="Taluntunin ng pagsusulat"
+                        android:textSize="@dimen/_18ssp"
+                        android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/wht"/>
 
                     <TextView
@@ -63,7 +63,7 @@
                         android:layout_height="wrap_content"
                         android:text="Matutong sumulat ng baybayin"
                         android:textSize="@dimen/_10ssp"
-                        android:fontFamily="@font/garet"
+                        android:fontFamily="@font/poppins_medium"
                         android:textColor="@color/wht"/>
 
                     <TextView
@@ -111,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:text="Patinig"
                 android:textColor="@color/wht"
-                android:fontFamily="@font/garet_black"
+                android:fontFamily="@font/poppins_bold"
                 android:textSize="@dimen/_17ssp"/>
 
             <LinearLayout
@@ -145,7 +145,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="A"
-                            android:fontFamily="@font/garet_black"
+                            android:fontFamily="@font/poppins_bold"
                             android:textSize="20sp"
                             android:textColor="@color/black"/>
 
@@ -179,7 +179,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="E/I"
-                            android:fontFamily="@font/garet_black"
+                            android:fontFamily="@font/poppins_bold"
                             android:textSize="20sp"
                             android:textColor="@color/black"/>
 
@@ -213,7 +213,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="O/U"
-                            android:fontFamily="@font/garet_black"
+                            android:fontFamily="@font/poppins_bold"
                             android:textSize="20sp"
                             android:textColor="@color/black"/>
 
@@ -230,7 +230,7 @@
                 android:layout_height="wrap_content"
                 android:text="Katinig"
                 android:textColor="@color/wht"
-                android:fontFamily="@font/garet_black"
+                android:fontFamily="@font/poppins_bold"
                 android:textSize="@dimen/_17ssp"/>
 
             <androidx.core.widget.NestedScrollView
@@ -277,7 +277,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Ba"
-                                    android:fontFamily="@font/garet_black"
+                                    android:fontFamily="@font/poppins_bold"
                                     android:textSize="20sp"
                                     android:textColor="@color/black"/>
 
@@ -311,7 +311,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Ka"
-                                    android:fontFamily="@font/garet_black"
+                                    android:fontFamily="@font/poppins_bold"
                                     android:textSize="20sp"
                                     android:textColor="@color/black"/>
 
@@ -345,7 +345,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Da/Ra"
-                                    android:fontFamily="@font/garet_black"
+                                    android:fontFamily="@font/poppins_bold"
                                     android:textSize="20sp"
                                     android:textColor="@color/black"/>
 
@@ -389,7 +389,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Ga"
-                                    android:fontFamily="@font/garet_black"
+                                    android:fontFamily="@font/poppins_bold"
                                     android:textSize="20sp"
                                     android:textColor="@color/black"/>
 
@@ -423,7 +423,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Ha"
-                                    android:fontFamily="@font/garet_black"
+                                    android:fontFamily="@font/poppins_bold"
                                     android:textSize="20sp"
                                     android:textColor="@color/black"/>
 
@@ -457,7 +457,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="La"
-                                    android:fontFamily="@font/garet_black"
+                                    android:fontFamily="@font/poppins_bold"
                                     android:textSize="20sp"
                                     android:textColor="@color/black"/>
 
@@ -501,7 +501,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Ma"
-                                    android:fontFamily="@font/garet_black"
+                                    android:fontFamily="@font/poppins_bold"
                                     android:textSize="20sp"
                                     android:textColor="@color/black"/>
 
@@ -535,7 +535,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Na"
-                                    android:fontFamily="@font/garet_black"
+                                    android:fontFamily="@font/poppins_bold"
                                     android:textSize="20sp"
                                     android:textColor="@color/black"/>
 
@@ -569,7 +569,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Nga"
-                                    android:fontFamily="@font/garet_black"
+                                    android:fontFamily="@font/poppins_bold"
                                     android:textSize="20sp"
                                     android:textColor="@color/black"/>
 
@@ -613,7 +613,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Pa"
-                                    android:fontFamily="@font/garet_black"
+                                    android:fontFamily="@font/poppins_bold"
                                     android:textSize="20sp"
                                     android:textColor="@color/black"/>
 
@@ -647,7 +647,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Sa"
-                                    android:fontFamily="@font/garet_black"
+                                    android:fontFamily="@font/poppins_bold"
                                     android:textSize="20sp"
                                     android:textColor="@color/black"/>
 
@@ -681,7 +681,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Ta"
-                                    android:fontFamily="@font/garet_black"
+                                    android:fontFamily="@font/poppins_bold"
                                     android:textSize="20sp"
                                     android:textColor="@color/black"/>
 
@@ -725,7 +725,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Wa"
-                                    android:fontFamily="@font/garet_black"
+                                    android:fontFamily="@font/poppins_bold"
                                     android:textSize="20sp"
                                     android:textColor="@color/black"/>
 
@@ -759,7 +759,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Ya"
-                                    android:fontFamily="@font/garet_black"
+                                    android:fontFamily="@font/poppins_bold"
                                     android:textSize="20sp"
                                     android:textColor="@color/black"/>
 

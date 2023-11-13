@@ -54,9 +54,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Games"
+                        android:text="Laro"
                         android:textSize="@dimen/_22ssp"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/wht"/>
 
                     <TextView
@@ -64,7 +64,7 @@
                         android:layout_height="wrap_content"
                         android:text="Subukin ang galing sa baybayin"
                         android:textSize="@dimen/_10ssp"
-                        android:fontFamily="@font/garet"
+                        android:fontFamily="@font/poppins_medium"
                         android:textColor="@color/wht"/>
 
                     <TextView
@@ -101,9 +101,9 @@
         android:layout_marginTop="@dimen/_15sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Categories"
+        android:text="Mga Kategorya"
         android:textSize="@dimen/_20ssp"
-        android:fontFamily="@font/garet_black"
+        android:fontFamily="@font/poppins_bold"
         android:textColor="@color/wht"/>
 
     <androidx.cardview.widget.CardView
@@ -150,8 +150,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Spot D Symbol"
-                    android:fontFamily="@font/garet_black"
+                    android:text="Hanapin ang simbolo"
+                    android:fontFamily="@font/poppins_bold"
                     android:textStyle="bold"
                     android:textSize="@dimen/_12ssp"
                     android:textColor="#656565"/>
@@ -159,7 +159,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Spot D Symbol"
+                    android:text="Hanapin ang simbolo"
                     android:fontFamily="@font/tagalogstylized"
                     android:textSize="@dimen/_12ssp"
                     android:textColor="#656565"/>

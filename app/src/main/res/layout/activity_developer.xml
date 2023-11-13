@@ -54,15 +54,15 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Developers"
+                        android:text="Nagdebelop"
                         android:textSize="@dimen/_25ssp"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/wht"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Developers"
+                        android:text="Nagdebelop"
                         android:textSize="@dimen/_10ssp"
                         android:fontFamily="@font/tagalogstylized"
                         android:textColor="@color/wht"/>
@@ -127,7 +127,7 @@
                     android:layout_height="wrap_content"
                     android:text="Lhea B. Almazar"
                     android:textSize="@dimen/_10ssp"
-                    android:fontFamily="@font/garet_black"
+                    android:fontFamily="@font/poppins_semibold"
                     android:textColor="@color/black"
                     android:letterSpacing=".1"/>
 
@@ -136,7 +136,7 @@
                     android:layout_height="wrap_content"
                     android:text="Programmer/Leader"
                     android:textSize="@dimen/_8ssp"
-                    android:fontFamily="@font/garet"
+                    android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/black"
                     android:letterSpacing=".1"
                     android:layout_marginBottom="@dimen/_15sdp"/>
@@ -176,7 +176,7 @@
                     android:layout_height="wrap_content"
                     android:text="Leah O. Antoni"
                     android:textSize="@dimen/_10ssp"
-                    android:fontFamily="@font/garet_black"
+                    android:fontFamily="@font/poppins_semibold"
                     android:textColor="@color/black"
                     android:letterSpacing=".1"/>
 
@@ -185,7 +185,7 @@
                     android:layout_height="wrap_content"
                     android:text="Researcher"
                     android:textSize="@dimen/_8ssp"
-                    android:fontFamily="@font/garet"
+                    android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/black"
                     android:letterSpacing=".1"
                     android:layout_marginBottom="@dimen/_15sdp"/>
@@ -225,7 +225,7 @@
                     android:layout_height="wrap_content"
                     android:text="Mechelle S. Ramos"
                     android:textSize="@dimen/_10ssp"
-                    android:fontFamily="@font/garet_black"
+                    android:fontFamily="@font/poppins_semibold"
                     android:textColor="@color/black"
                     android:letterSpacing=".1"/>
 
@@ -234,7 +234,7 @@
                     android:layout_height="wrap_content"
                     android:text="Researcher"
                     android:textSize="@dimen/_8ssp"
-                    android:fontFamily="@font/garet"
+                    android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/black"
                     android:letterSpacing=".1"
                     android:layout_marginBottom="@dimen/_15sdp"/>
@@ -274,7 +274,7 @@
                     android:layout_height="wrap_content"
                     android:text="Harlequin Eira B. Babas"
                     android:textSize="@dimen/_10ssp"
-                    android:fontFamily="@font/garet_black"
+                    android:fontFamily="@font/poppins_semibold"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:letterSpacing=".1"/>
@@ -284,7 +284,7 @@
                     android:layout_height="wrap_content"
                     android:text="Researcher"
                     android:textSize="@dimen/_8ssp"
-                    android:fontFamily="@font/garet"
+                    android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/black"
                     android:letterSpacing=".1"
                     android:layout_marginBottom="@dimen/_15sdp"/>

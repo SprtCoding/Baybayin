@@ -27,6 +27,7 @@ import com.sprtcoding.baybayin.R;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 public class EasyLevel extends AppCompatActivity {
@@ -186,7 +187,7 @@ public class EasyLevel extends AppCompatActivity {
     private void getAnswer(String answer) {
         if (options.isEmpty()) {
             // No option is selected, show a toast
-            Toast.makeText(this, "Please select an answer.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Pumili ng sagot.", Toast.LENGTH_SHORT).show();
         } else if (options.get(0).getSelectedAnswer().equals(answer)) {
             score++;
             score_tv.setText("Score: " + score);
@@ -368,7 +369,7 @@ public class EasyLevel extends AppCompatActivity {
         _no_btn = timerDialog.findViewById(R.id.no_btn);
         final AlertDialog timersDialog = timerDialogBuilder.create();
 
-        timersDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Objects.requireNonNull(timersDialog.getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         timersDialog.setCanceledOnTouchOutside(false);
 
         _yes_btn.setOnClickListener(view -> {
@@ -394,7 +395,7 @@ public class EasyLevel extends AppCompatActivity {
         _next_btn = correctDialog.findViewById(R.id.next_btn);
         final AlertDialog correctsDialog = correctDialogBuilder.create();
 
-        correctsDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Objects.requireNonNull(correctsDialog.getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         correctsDialog.setCanceledOnTouchOutside(false);
 
         _next_btn.setOnClickListener(view -> {
@@ -415,7 +416,7 @@ public class EasyLevel extends AppCompatActivity {
         _next_btn = wrongDialog.findViewById(R.id.next_btn);
         final AlertDialog wrongsDialog = wrongDialogBuilder.create();
 
-        wrongsDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Objects.requireNonNull(wrongsDialog.getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         wrongsDialog.setCanceledOnTouchOutside(false);
 
         _next_btn.setOnClickListener(view -> {
@@ -446,11 +447,11 @@ public class EasyLevel extends AppCompatActivity {
         total_score.setText(String.valueOf(score));
 
         if(score <= 3) {
-            score_text.setText("Oh no! you have a lowest score!");
+            score_text.setText("Oh hindi! ikaw ay may pinakamababang iskor!");
             anim.setAnimation(R.raw.sadface);
             anim.playAnimation();
         }else {
-            score_text.setText("You have a Highest Score. You are great!");
+            score_text.setText("Mayroon kang Pinakamataas na Score. Magaling ka!");
             anim.setAnimation(R.raw.congrats);
             anim.playAnimation();
         }

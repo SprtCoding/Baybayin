@@ -53,23 +53,23 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Spot the Symbol"
-                        android:textSize="@dimen/_22ssp"
-                        android:fontFamily="@font/garet_black"
+                        android:text="Hanapin Ang Simbolo"
+                        android:textSize="@dimen/_18ssp"
+                        android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/wht"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Level Categories"
+                        android:text="Mga Kategorya"
                         android:textSize="@dimen/_12ssp"
-                        android:fontFamily="@font/garet"
+                        android:fontFamily="@font/poppins_medium"
                         android:textColor="@color/wht"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Spot the Symbol"
+                        android:text="Hanapin Ang Simbolo"
                         android:textSize="@dimen/_10ssp"
                         android:fontFamily="@font/tagalogstylized"
                         android:textColor="@color/wht"/>
@@ -107,10 +107,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Easy"
+                android:text="Madali"
                 android:textColor="@color/black"
                 android:layout_gravity="center"
-                android:fontFamily="@font/garet_black"
+                android:fontFamily="@font/poppins_bold"
                 android:textSize="@dimen/_15ssp"/>
 
         </androidx.cardview.widget.CardView>
@@ -125,10 +125,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Moderate"
+                android:text="Katamtaman"
                 android:textColor="@color/black"
                 android:layout_gravity="center"
-                android:fontFamily="@font/garet_black"
+                android:fontFamily="@font/poppins_bold"
                 android:textSize="@dimen/_15ssp"/>
 
         </androidx.cardview.widget.CardView>
@@ -143,10 +143,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hard"
+                android:text="Mahirap"
                 android:textColor="@color/black"
                 android:layout_gravity="center"
-                android:fontFamily="@font/garet_black"
+                android:fontFamily="@font/poppins_bold"
                 android:textSize="@dimen/_15ssp"/>
 
         </androidx.cardview.widget.CardView>

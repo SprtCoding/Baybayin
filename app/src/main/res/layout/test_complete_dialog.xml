@@ -31,10 +31,11 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Test Completed"
+                android:text="Nakumpleto ang pagsubok"
+                android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_20ssp"
-                android:fontFamily="@font/garet_black"
+                android:fontFamily="@font/poppins_bold"
                 android:letterSpacing=".1"/>
 
             <TextView
@@ -45,7 +46,7 @@
                 android:text="0"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_50ssp"
-                android:fontFamily="@font/garet_black"
+                android:fontFamily="@font/poppins_bold"
                 android:letterSpacing=".1"/>
 
             <TextView
@@ -53,22 +54,22 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="You are Amazing!"
+                android:text="Ikaw ay kahanga hanga!"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_15ssp"
                 android:textAlignment="center"
-                android:fontFamily="@font/garet"
+                android:fontFamily="@font/poppins_medium"
                 android:letterSpacing=".1"/>
 
             <com.google.android.material.button.MaterialButton
                 android:layout_marginTop="@dimen/_15sdp"
                 app:cornerRadius="@dimen/_25sdp"
-                android:layout_width="@dimen/_100sdp"
+                android:layout_width="wrap_content"
                 android:layout_height="@dimen/_40sdp"
-                android:text="Ok"
+                android:text="Magpatuloy"
                 android:backgroundTint="@color/green"
                 android:id="@+id/ok_btn"
-                android:fontFamily="@font/garet_black"
+                android:fontFamily="@font/poppins_bold"
                 android:textSize="@dimen/_10ssp"/>
 
         </LinearLayout>

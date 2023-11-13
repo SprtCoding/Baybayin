@@ -11,11 +11,11 @@
 
     <!-- Dark Overlay -->
     <View
-        android:layout_centerInParent="true"
+        android:id="@+id/darkOverlay"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#80000000"
-        android:id="@+id/darkOverlay"/>
+        android:layout_centerInParent="true"
+        android:background="#80000000" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="match_parent"
@@ -47,6 +47,7 @@
                 android:layout_height="@dimen/_40sdp"
                 android:src="@drawable/baseline_arrow_back_24"
                 android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
                 app:tint="@color/wht" />
 
             <LinearLayout
@@ -63,9 +64,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Quizzes"
+                        android:text="Pagsusulit"
                         android:textSize="@dimen/_25ssp"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/wht"/>
 
                     <TextView
@@ -73,13 +74,13 @@
                         android:layout_height="wrap_content"
                         android:text="Subukin mo"
                         android:textSize="@dimen/_12ssp"
-                        android:fontFamily="@font/garet"
+                        android:fontFamily="@font/poppins_medium"
                         android:textColor="@color/wht"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Quizzes"
+                        android:text="Pagsusulit"
                         android:textSize="@dimen/_10ssp"
                         android:fontFamily="@font/tagalogstylized"
                         android:textColor="@color/wht"/>
@@ -90,9 +91,8 @@
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_width="@dimen/_50sdp"
                     android:layout_height="@dimen/_50sdp"
-                    android:src="@drawable/game"
-                    android:contentDescription="@string/app_name"
-                    app:tint="@color/wht" />
+                    android:src="@drawable/quizzes_img_lrg"
+                    android:contentDescription="@string/app_name" />
 
             </LinearLayout>
 
@@ -132,7 +132,7 @@
                         android:layout_height="wrap_content"
                         android:text="0/0"
                         android:textSize="@dimen/_15ssp"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/wht"/>
 
                     <TextView
@@ -144,7 +144,7 @@
                         android:layout_height="wrap_content"
                         android:text="00:00"
                         android:textSize="@dimen/_15ssp"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/wht"
                         app:drawableStartCompat="@drawable/baseline_timer_24"
                         app:drawableTint="@color/wht" />
@@ -162,7 +162,7 @@
                         android:layout_height="wrap_content"
                         android:text="0"
                         android:textSize="@dimen/_15ssp"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/wht"/>
 
                 </LinearLayout>
@@ -200,7 +200,7 @@
                             android:layout_height="wrap_content"
                             android:text="Subukin mo"
                             android:textSize="@dimen/_15ssp"
-                            android:fontFamily="@font/garet_black"
+                            android:fontFamily="@font/poppins_bold"
                             android:textColor="#E23744"/>
 
                     </LinearLayout>
@@ -219,7 +219,7 @@
                         android:layout_height="wrap_content"
                         android:text="Option 1"
                         android:textColor="@color/wht"
-                        android:fontFamily="@font/garet"
+                        android:fontFamily="@font/poppins_medium"
                         android:textSize="@dimen/_13ssp"
                         android:buttonTint="@color/wht"
                         android:gravity="center_vertical"/>
@@ -230,7 +230,7 @@
                         android:layout_height="wrap_content"
                         android:text="Option 1"
                         android:textColor="@color/wht"
-                        android:fontFamily="@font/garet"
+                        android:fontFamily="@font/poppins_medium"
                         android:textSize="@dimen/_13ssp"
                         android:buttonTint="@color/wht"
                         android:gravity="center_vertical"/>
@@ -241,7 +241,7 @@
                         android:layout_height="wrap_content"
                         android:text="Option 1"
                         android:textColor="@color/wht"
-                        android:fontFamily="@font/garet"
+                        android:fontFamily="@font/poppins_medium"
                         android:textSize="@dimen/_13ssp"
                         android:buttonTint="@color/wht"
                         android:gravity="center_vertical"/>
@@ -252,9 +252,9 @@
                     android:layout_width="@dimen/_200sdp"
                     android:layout_height="@dimen/_40sdp"
                     android:layout_marginTop="@dimen/_20sdp"
-                    android:text="Submit"
+                    android:text="Ipasa"
                     android:textAllCaps="false"
-                    android:fontFamily="@font/garet_black"
+                    android:fontFamily="@font/poppins_bold"
                     android:textSize="@dimen/_10ssp"
                     android:textColor="@color/black"
                     app:cornerRadius="@dimen/_30sdp"

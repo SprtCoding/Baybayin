@@ -53,9 +53,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="History"
+                        android:text="Kasaysayan"
                         android:textSize="@dimen/_22ssp"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/wht"/>
 
                     <TextView
@@ -63,7 +63,7 @@
                         android:layout_height="wrap_content"
                         android:text="Kasaysayan ng Wikang Pambansa"
                         android:textSize="@dimen/_10ssp"
-                        android:fontFamily="@font/garet"
+                        android:fontFamily="@font/poppins_medium"
                         android:textColor="@color/wht"/>
 
                     <TextView
@@ -109,7 +109,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/kasaysayan_ng_wikang_pambansa"
                 android:textSize="@dimen/_12ssp"
-                android:fontFamily="@font/garet"
+                android:justificationMode="inter_word"
+                android:fontFamily="@font/poppins_medium"
                 android:textColor="@color/wht"/>
 
             <TextView
@@ -118,7 +119,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/panahon_ng_katutubo"
                 android:textSize="@dimen/_20ssp"
-                android:fontFamily="@font/garet_black"
+                android:fontFamily="@font/poppins_bold"
                 android:textColor="@color/wht"/>
 
             <TextView
@@ -127,7 +128,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/panahon"
                 android:textSize="@dimen/_12ssp"
-                android:fontFamily="@font/garet"
+                android:justificationMode="inter_word"
+                android:fontFamily="@font/poppins_medium"
                 android:textColor="@color/wht"/>
 
             <TextView
@@ -137,7 +139,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/_1_teorya_ng_pandrayuhan"
                 android:textSize="@dimen/_15ssp"
-                android:fontFamily="@font/garet_black"
+                android:fontFamily="@font/poppins_bold"
                 android:textColor="@color/wht"/>
 
             <TextView
@@ -147,7 +149,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/numberOne"
                 android:textSize="@dimen/_12ssp"
-                android:fontFamily="@font/garet"
+                android:justificationMode="inter_word"
+                android:fontFamily="@font/poppins_medium"
                 android:textColor="@color/wht"/>
 
             <TextView
@@ -157,7 +160,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/drfox"
                 android:textSize="@dimen/_12ssp"
-                android:fontFamily="@font/garet"
+                android:justificationMode="inter_word"
+                android:fontFamily="@font/poppins_medium"
                 android:textColor="@color/wht"/>
 
             <TextView
@@ -167,7 +171,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/_2_teorya_ng_pandarayuhan_mula_sa_rehiyong_autronesyano"
                 android:textSize="@dimen/_15ssp"
-                android:fontFamily="@font/garet_black"
+                android:fontFamily="@font/poppins_bold"
                 android:textColor="@color/wht"/>
 
             <TextView
@@ -177,7 +181,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/isla"
                 android:textSize="@dimen/_12ssp"
-                android:fontFamily="@font/garet"
+                android:justificationMode="inter_word"
+                android:fontFamily="@font/poppins_medium"
                 android:textColor="@color/wht"/>
 
             <TextView
@@ -186,7 +191,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/ayonkay"
                 android:textSize="@dimen/_12ssp"
-                android:fontFamily="@font/garet"
+                android:justificationMode="inter_word"
+                android:fontFamily="@font/poppins_medium"
                 android:textColor="@color/wht"/>
 
             <TextView
@@ -195,7 +201,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/angbaybayin"
                 android:textSize="@dimen/_12ssp"
-                android:fontFamily="@font/garet"
+                android:justificationMode="inter_word"
+                android:fontFamily="@font/poppins_medium"
                 android:textColor="@color/wht"/>
 
         </LinearLayout>

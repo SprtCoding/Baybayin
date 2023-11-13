@@ -51,9 +51,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Learn Baybayin"
-                        android:textSize="@dimen/_22ssp"
-                        android:fontFamily="@font/garet_black"
+                        android:text="Matuto ng baybayin"
+                        android:textSize="@dimen/_18ssp"
+                        android:fontFamily="@font/poppins_semibold"
                         android:textColor="@color/wht"/>
 
                     <TextView
@@ -61,7 +61,7 @@
                         android:layout_height="wrap_content"
                         android:text="Matuto sumulat ng Baybayin"
                         android:textSize="@dimen/_10ssp"
-                        android:fontFamily="@font/garet"
+                        android:fontFamily="@font/poppins_medium"
                         android:textColor="@color/wht"/>
 
                     <TextView
@@ -145,8 +145,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Word Trace"
-                            android:fontFamily="@font/garet_black"
+                            android:text="Taluntunin ng pagsusulat"
+                            android:fontFamily="@font/poppins_semibold"
                             android:textStyle="bold"
                             android:textSize="@dimen/_12ssp"
                             android:textColor="#656565"/>
@@ -154,9 +154,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Word Trace"
+                            android:text="Taluntunin ng pagsusulat"
                             android:fontFamily="@font/tagalogstylized"
-                            android:textSize="@dimen/_12ssp"
+                            android:textSize="@dimen/_8ssp"
                             android:textColor="#656565"/>
 
                     </LinearLayout>
@@ -206,11 +206,10 @@
                         android:paddingStart="@dimen/_15sdp">
 
                         <TextView
-                            android:id="@+id/highScore"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="High Score: 0"
-                            android:fontFamily="@font/garet"
+                            android:text="Pagsusulit"
+                            android:fontFamily="@font/poppins_semibold"
                             android:textStyle="bold"
                             android:textSize="@dimen/_12ssp"
                             android:textColor="#656565"/>
@@ -218,16 +217,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Quizzes"
-                            android:fontFamily="@font/garet_black"
-                            android:textStyle="bold"
-                            android:textSize="@dimen/_12ssp"
-                            android:textColor="#656565"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Quizzes"
+                            android:text="Pagsusulit"
                             android:fontFamily="@font/tagalogstylized"
                             android:textSize="@dimen/_12ssp"
                             android:textColor="#656565"/>
@@ -281,8 +271,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Ga-Bay"
-                            android:fontFamily="@font/garet_black"
+                            android:text="Ga-bay"
+                            android:fontFamily="@font/poppins_semibold"
                             android:textStyle="bold"
                             android:textSize="@dimen/_12ssp"
                             android:textColor="#656565"/>

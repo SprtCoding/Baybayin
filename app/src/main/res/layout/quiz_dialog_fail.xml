@@ -33,7 +33,7 @@
             android:layout_centerHorizontal="true"
             android:text=""
             android:textAlignment="center"
-            android:fontFamily="@font/garet_black"
+            android:fontFamily="@font/poppins_bold"
             android:textColor="@color/white"
             android:textSize="@dimen/_18ssp"
             android:layout_gravity="center_horizontal"/>
@@ -46,9 +46,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/_20sdp"
             android:layout_marginBottom="@dimen/_10sdp"
-            android:text="Ok"
+            android:text="Magpatuloy"
             android:textColor="@color/black"
-            android:fontFamily="@font/garet_black"
+            android:fontFamily="@font/poppins_bold"
             android:textAllCaps="false"
             android:textSize="@dimen/_10ssp"/>
 

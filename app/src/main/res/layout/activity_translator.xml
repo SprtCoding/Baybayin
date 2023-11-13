@@ -52,9 +52,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Translate"
+                        android:text="Tagasalin"
                         android:textSize="@dimen/_22ssp"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:textColor="#f4f4f4"/>
 
                     <TextView
@@ -62,7 +62,7 @@
                         android:layout_height="wrap_content"
                         android:text="Magsalin ng salita sa baybayin"
                         android:textSize="@dimen/_12ssp"
-                        android:fontFamily="@font/garet"
+                        android:fontFamily="@font/poppins_medium"
                         android:textColor="#f4f4f4"/>
 
                     <TextView
@@ -103,10 +103,10 @@
             android:id="@+id/translatedText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="a"
+            android:text="Naisaling letra"
             android:textSize="60sp"
             android:textAlignment="center"
-            android:fontFamily="@font/garet_black"
+            android:fontFamily="@font/poppins_bold"
             android:textColor="@color/wht"/>
 
         <EditText
@@ -120,7 +120,7 @@
             android:inputType="text"
             android:textAlignment="center"
             android:hint="Enter tagalog text"
-            android:fontFamily="@font/garet"
+            android:fontFamily="@font/poppins_medium"
             android:textColorHint="#BABABA"
             android:textColor="@color/wht"/>
 

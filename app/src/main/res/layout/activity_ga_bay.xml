@@ -54,7 +54,7 @@
                         android:layout_height="wrap_content"
                         android:text="Gabay"
                         android:textSize="@dimen/_22ssp"
-                        android:fontFamily="@font/garet_black"
+                        android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/wht"/>
 
                     <TextView
@@ -62,7 +62,7 @@
                         android:layout_height="wrap_content"
                         android:text="Gabay sa Pagsulat"
                         android:textSize="@dimen/_10ssp"
-                        android:fontFamily="@font/garet"
+                        android:fontFamily="@font/poppins_medium"
                         android:textColor="@color/wht"/>
 
                     <TextView

@@ -29,20 +29,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Correct!"
+                android:text="Tama!"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_20ssp"
-                android:fontFamily="@font/garet_black"
+                android:fontFamily="@font/poppins_bold"
                 android:letterSpacing=".1"/>
 
             <TextView
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Keep it up!"
+                android:text="Ituloy mo lang!"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_15ssp"
-                android:fontFamily="@font/garet"
+                android:fontFamily="@font/poppins_medium"
                 android:letterSpacing=".1"/>
 
             <com.google.android.material.button.MaterialButton
@@ -50,10 +50,10 @@
                 android:layout_width="@dimen/_100sdp"
                 android:layout_height="@dimen/_40sdp"
                 android:layout_marginTop="@dimen/_20sdp"
-                android:text="Next"
+                android:text="Sunod"
                 android:backgroundTint="@color/green"
                 android:id="@+id/next_btn"
-                android:fontFamily="@font/garet_black"
+                android:fontFamily="@font/poppins_bold"
                 android:textSize="@dimen/_10ssp"/>
 
         </LinearLayout>
