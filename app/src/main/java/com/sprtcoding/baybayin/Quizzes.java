@@ -68,7 +68,7 @@ public class Quizzes extends AppCompatActivity {
                 if(_rb1.isChecked() || _rb2.isChecked() || _rb3.isChecked()) {
                     checkAnswer();
                 }else {
-                    Toast.makeText(this, "Please select an answer!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Pumili ng sagot!", Toast.LENGTH_SHORT).show();
                 }
             }else {
                 showNextQuestion();
@@ -133,22 +133,22 @@ public class Quizzes extends AppCompatActivity {
         switch (currentQuestion.getAnswerNr()) {
             case 1:
                 _rb1.setTextColor(Color.GREEN);
-                _questions.setText("Answer 1 is correct");
+                _questions.setText("Ang sagot na 1 ay tama");
                 break;
             case 2:
                 _rb2.setTextColor(Color.GREEN);
-                _questions.setText("Answer 2 is correct");
+                _questions.setText("Ang sagot na 2 ay tama");
                 break;
             case 3:
                 _rb3.setTextColor(Color.GREEN);
-                _questions.setText("Answer 3 is correct");
+                _questions.setText("Ang sagot na 3 ay tama");
                 break;
         }
 
         if(questionCounter < questionCountTotal) {
-            _btnSubmitNext.setText("Next");
+            _btnSubmitNext.setText("Sunod");
         }else {
-            _btnSubmitNext.setText("Finish");
+            _btnSubmitNext.setText("Tapos na");
         }
     }
 
@@ -170,7 +170,7 @@ public class Quizzes extends AppCompatActivity {
             questionCounter++;
             _questionCount.setText("Question: " + questionCounter + "/" + questionCountTotal);
             isAnswered = false;
-            _btnSubmitNext.setText("Submit");
+            _btnSubmitNext.setText("Ipasa");
         } else {
             finishQuiz();
             countDownTimer.cancel();
@@ -218,7 +218,7 @@ public class Quizzes extends AppCompatActivity {
         _okBtn = successAlertDialog.findViewById(R.id.okBtnSuccess);
         final AlertDialog successDialog = successAlertDialogBuilder.create();
 
-        successDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Objects.requireNonNull(successDialog.getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         successDialog.setCanceledOnTouchOutside(false);
 
         _okBtn.setOnClickListener(view -> {
