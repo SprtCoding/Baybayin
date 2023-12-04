@@ -62,7 +62,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nagdebelop"
+                        android:text="ᜈᜄ᜔ᜇᜒᜊᜒᜎ᜔oᜉ᜔"
                         android:textSize="@dimen/_10ssp"
                         android:fontFamily="@font/tagalogstylized"
                         android:textColor="@color/wht"/>

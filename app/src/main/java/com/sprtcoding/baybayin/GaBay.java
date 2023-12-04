@@ -20,7 +20,7 @@ public class GaBay extends AppCompatActivity {
         _init();
 
         // Load a PDF file from assets folder (change the file path as needed)
-        pdfView.fromAsset("baybay.pdf")
+        pdfView.fromAsset("gabay.pdf")
                 .enableSwipe(true)
                 .swipeHorizontal(false)
                 .enableDoubletap(true)

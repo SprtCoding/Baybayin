@@ -30,19 +30,16 @@ import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 public class HardLevel extends AppCompatActivity {
-    private TextView questionCount, _timerCount, _symbol, _option_1, _option_2, _option_3, _option_4, _option_5
-            , _option_6, _option_7, _option_8, _option_9, _option_10, _option_11, _option_12
-            , _option_13, _option_14, _option_15, _option_16 , _option_17, _option_18, _option_19, _option_20
-            , lastBtnClicked = null, score_tv, total_score, score_text;
-    private MaterialButton _yes_btn, _no_btn, submitBtn, _next_btn, _ok_btn;
-    private LottieAnimationView anim;
+    TextView questionCount, _timerCount, _symbol, _option_1, _option_2, _option_3, lastBtnClicked = null, score_tv, total_score, score_text;
+    MaterialButton _yes_btn, _no_btn, submitBtn, _next_btn, _ok_btn;
+    LottieAnimationView anim;
     private int currentNoOfTest, totalNoOfTest, score = 0;
     private String answer = "";
     CountDownTimer countDownTimer;
-    private Boolean isAnswered;
+    Boolean isAnswered;
     private final List<OptionsModel> options = new ArrayList<>();
     private final List<HardModel> questionsModels = new ArrayList<>();
-    private HardModel currentQuestion;
+    HardModel currentQuestion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,7 +99,7 @@ public class HardLevel extends AppCompatActivity {
         _no_btn = timerDialog.findViewById(R.id.no_btn);
         final AlertDialog timersDialog = timerDialogBuilder.create();
 
-        timersDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Objects.requireNonNull(timersDialog.getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         timersDialog.setCanceledOnTouchOutside(false);
 
         _yes_btn.setOnClickListener(view -> {
@@ -122,10 +119,10 @@ public class HardLevel extends AppCompatActivity {
     private void getAnswer(String answer) {
         if (options.isEmpty()) {
             // No option is selected, show a toast
-            Toast.makeText(this, "Please select an answer.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Hanapin ang sagot, bago magpatuloy.", Toast.LENGTH_SHORT).show();
         } else if (options.get(0).getSelectedAnswer().equals(answer)) {
             score++;
-            score_tv.setText("Score: " + score);
+            score_tv.setText("Puntos: " + score);
             showCorrectDialog();
 
             // Change the background color of the selected option back to its original color
@@ -154,7 +151,7 @@ public class HardLevel extends AppCompatActivity {
         _next_btn = correctDialog.findViewById(R.id.next_btn);
         final AlertDialog correctsDialog = correctDialogBuilder.create();
 
-        correctsDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Objects.requireNonNull(correctsDialog.getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         correctsDialog.setCanceledOnTouchOutside(false);
 
         _next_btn.setOnClickListener(view -> {
@@ -175,7 +172,7 @@ public class HardLevel extends AppCompatActivity {
         _next_btn = wrongDialog.findViewById(R.id.next_btn);
         final AlertDialog wrongsDialog = wrongDialogBuilder.create();
 
-        wrongsDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Objects.requireNonNull(wrongsDialog.getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         wrongsDialog.setCanceledOnTouchOutside(false);
 
         _next_btn.setOnClickListener(view -> {
@@ -188,123 +185,21 @@ public class HardLevel extends AppCompatActivity {
 
     private void setClickListener() {
         _option_1.setOnClickListener(view -> {
-            String option = _option_1.getText().toString();
+            String option = _option_1.getText().toString().trim();
             setAnswer(option);
             changeButtonBackground(_option_1);
         });
 
         _option_2.setOnClickListener(view -> {
-            String option = _option_2.getText().toString();
+            String option = _option_2.getText().toString().trim();
             setAnswer(option);
             changeButtonBackground(_option_2);
         });
 
         _option_3.setOnClickListener(view -> {
-            String option = _option_3.getText().toString();
+            String option = _option_3.getText().toString().trim();
             setAnswer(option);
             changeButtonBackground(_option_3);
-        });
-
-        _option_4.setOnClickListener(view -> {
-            String option = _option_4.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_4);
-        });
-
-        _option_5.setOnClickListener(view -> {
-            String option = _option_5.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_5);
-        });
-
-        _option_6.setOnClickListener(view -> {
-            String option = _option_6.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_6);
-        });
-
-        _option_7.setOnClickListener(view -> {
-            String option = _option_7.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_7);
-        });
-
-        _option_8.setOnClickListener(view -> {
-            String option = _option_8.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_8);
-        });
-
-        _option_9.setOnClickListener(view -> {
-            String option = _option_9.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_9);
-        });
-
-        _option_10.setOnClickListener(view -> {
-            String option = _option_10.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_10);
-        });
-
-        _option_11.setOnClickListener(view -> {
-            String option = _option_11.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_11);
-        });
-
-        _option_12.setOnClickListener(view -> {
-            String option = _option_12.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_12);
-        });
-
-        _option_13.setOnClickListener(view -> {
-            String option = _option_13.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_13);
-        });
-
-        _option_14.setOnClickListener(view -> {
-            String option = _option_14.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_14);
-        });
-
-        _option_15.setOnClickListener(view -> {
-            String option = _option_15.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_15);
-        });
-
-        _option_16.setOnClickListener(view -> {
-            String option = _option_16.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_16);
-        });
-
-        _option_17.setOnClickListener(view -> {
-            String option = _option_17.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_17);
-        });
-
-        _option_18.setOnClickListener(view -> {
-            String option = _option_18.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_18);
-        });
-
-        _option_19.setOnClickListener(view -> {
-            String option = _option_19.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_19);
-        });
-
-        _option_20.setOnClickListener(view -> {
-            String option = _option_20.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_20);
         });
     }
 
@@ -333,378 +228,123 @@ public class HardLevel extends AppCompatActivity {
     private void addQuestions() {
         //1
         questionsModels.add(new HardModel(
-                "ᜉ᜔",
-                "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "\u170D᜔᜔",
-                "ᜐ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜎ᜔",
-                "ᜏ᜔",
-                "ᜊᜆ",
-                "ᜄ",
-                "ᜅ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "ᜐᜌ᜔",
-                "ᜀᜃ᜔",
-                "ᜁ",
-                "ᜊ",
-                "ᜊᜆ",
-                "ᜊᜆ"
+                "ᜉᜒᜎᜒᜉᜒᜈᜐ᜔",
+                "ᜉᜒᜉᜒᜈ᜔",
+                "ᜉᜒᜎᜒᜉᜒᜈ᜔",
+                "Pilipinas",
+                "ᜉᜒᜎᜒᜉᜒᜈᜐ᜔"
         ));
         //2
         questionsModels.add(new HardModel(
-                "ᜐ",
-                "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "\u170D᜔᜔",
-                "ᜐ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜎ᜔",
-                "ᜏ᜔",
-                "ᜊᜆ",
-                "ᜄ",
-                "ᜅ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "ᜐᜌ᜔",
-                "ᜀᜃ᜔",
-                "ᜁ",
-                "ᜊ",
-                "ᜐ",
-                "ᜐ"
+                "ᜋᜄᜈ᜔ᜇᜅ᜔ ᜀ\u170Dᜏ᜔᜔᜔᜔",
+                "ᜋᜄᜈ᜔ᜇᜅ᜔ ᜂᜋᜄ",
+                "ᜋᜄᜈ᜔ᜇᜅ᜔ ᜑᜉ᜔ᜈ᜔",
+                "Magandang Araw",
+                "ᜋᜄᜈ᜔ᜇᜅ᜔ ᜀ\u170Dᜏ᜔᜔᜔᜔"
         ));
         //3
         questionsModels.add(new HardModel(
-                "ᜐ",
-                "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "ᜉ᜔᜔",
-                "ᜐ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜎ᜔",
-                "ᜏ᜔",
-                "ᜊᜆ",
-                "ᜄ",
-                "ᜅ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "ᜐᜌ᜔",
-                "ᜀᜃ᜔",
-                "ᜁ",
-                "ᜊ",
-                "ᜉ",
-                "ᜉ"
+                "ᜊᜑᜌ᜔",
+                "ᜊᜌ᜔ᜊᜌᜒᜈ᜔",
+                "ᜊᜌᜈᜒ",
+                "Baybayin",
+                "ᜊᜌ᜔ᜊᜌᜒᜈ᜔"
         ));
         //4
         questionsModels.add(new HardModel(
-                "ᜐ",
-                "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "ᜉ᜔᜔",
-                "ᜐ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜎ᜔",
-                "ᜏ᜔",
-                "ᜊᜆ",
-                "ᜄ",
-                "ᜅ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "ᜐᜌ᜔",
-                "ᜀ᜔",
-                "ᜁ",
-                "ᜊ",
-                "ᜀ",
-                "ᜀ"
+                "ᜋᜄᜈ᜔ᜇᜅ᜔ ᜑᜉ᜔ᜈ᜔",
+                "ᜋᜄᜈ᜔ᜇᜅ᜔ ᜀᜃ᜔",
+                "ᜋᜄᜈ᜔ᜇᜅ᜔ ᜂᜋᜄ",
+                "Magandang Umaga",
+                "ᜋᜄᜈ᜔ᜇᜅ᜔ ᜂᜋᜄ"
         ));
         //5
         questionsModels.add(new HardModel(
-                "ᜐ",
-                "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "ᜉ᜔᜔",
-                "ᜐ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜎ᜔",
-                "ᜏ᜔",
-                "ᜊᜆ",
-                "ᜄ",
-                "ᜅ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "ᜐᜌ᜔",
-                "ᜀ᜔",
-                "ᜁ",
-                "ᜊ",
-                "ᜄ",
-                "ᜄ"
+                "ᜃᜓᜋᜓᜐ᜔ᜆ",
+                "ᜃᜓᜋᜁᜈ᜔",
+                "ᜃᜓᜋᜈ᜔ᜆ",
+                "Kumusta",
+                "ᜃᜓᜋᜓᜐ᜔ᜆ"
         ));
         //6
         questionsModels.add(new HardModel(
-                "ᜐ",
-                "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "ᜉ᜔᜔",
-                "ᜀᜅ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜎ᜔",
-                "ᜏ᜔",
-                "ᜊᜆ",
-                "ᜄ",
-                "ᜅ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "ᜐᜌ᜔",
-                "ᜀ᜔",
-                "ᜁ",
-                "ᜊ",
-                "ᜀᜅ᜔",
-                "ᜀᜅ᜔"
+                "ᜋ\u170Dᜋᜒᜅ᜔ ᜇᜋᜒᜆ᜔᜔᜔",
+                "ᜋ\u170Dᜋᜒᜅ᜔ ᜐᜎᜋᜆ᜔",
+                "ᜋ\u170Dᜋᜒᜅ᜔ ᜋ\u170Dᜋᜒᜒ᜔",
+                "Maraming Salamat",
+                "ᜋ\u170Dᜋᜒᜅ᜔ ᜐᜎᜋᜆ᜔"
         ));
         //7
         questionsModels.add(new HardModel(
-                "ᜐ",
-                "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "ᜉ᜔᜔",
-                "ᜀᜅ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜎ᜔",
-                "ᜏ᜔",
-                "ᜊᜆ",
-                "ᜄ",
-                "ᜋᜆ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "ᜐᜌ᜔",
-                "ᜀ᜔",
-                "ᜁ",
-                "ᜊ",
-                "ᜋᜆ",
-                "ᜋᜆ"
+                "ᜉᜀᜐ",
+                "ᜉᜐ᜔ᜃ᜔",
+                "ᜉᜀᜎᜋ᜔",
+                "Paalam",
+                "ᜉᜀᜎᜋ᜔"
         ));
         //8
         questionsModels.add(new HardModel(
-                "ᜐ",
-                "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "ᜉ᜔᜔",
-                "ᜀᜅ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜆᜎ᜔",
-                "ᜏ᜔",
-                "ᜊᜆ",
-                "ᜄ",
-                "ᜋᜆ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "ᜐᜌ᜔",
-                "ᜀ᜔",
-                "ᜁ",
-                "ᜊ",
-                "ᜆᜎ",
-                "ᜆᜎ"
+                "ᜋᜑᜎ᜔ ᜃᜒᜆ",
+                "ᜋᜑᜎ᜔ ᜃ",
+                "ᜋᜑᜎ᜔ ᜆᜌ᜔",
+                "Mahal Kita",
+                "ᜋᜑᜎ᜔ ᜃᜒᜆ"
         ));
         //9
         questionsModels.add(new HardModel(
-                "ᜐᜌ᜔",
-                "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "ᜉ᜔᜔",
-                "ᜀᜅ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜆᜎ᜔",
-                "ᜏ᜔",
-                "ᜊᜆ",
-                "ᜄ",
-                "ᜋᜆ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "ᜐᜌ᜔",
-                "ᜀ᜔",
-                "ᜁ",
-                "ᜊ",
-                "ᜐᜌ᜔",
-                "ᜐᜌ᜔"
+                "ᜋᜊᜓᜑᜌ᜔᜔",
+                "ᜋᜊᜓᜆᜒ",
+                "ᜋᜊᜑ᜔",
+                "Mabuhay",
+                "ᜋᜊᜓᜑᜌ᜔"
         ));
         //10
         questionsModels.add(new HardModel(
-                "ᜐᜌ᜔",
-                "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "ᜉ᜔᜔",
-                "ᜀᜅ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜆᜎ᜔",
-                "ᜏ᜔",
-                "ᜊᜆ",
-                "ᜄ",
-                "ᜋᜆ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "ᜎᜒ",
-                "ᜀ᜔",
-                "ᜁ",
-                "ᜊ",
-                "ᜎᜒ",
-                "ᜎᜒ"
+                "ᜀ\u170Dᜏ᜔ ᜅ᜔ ᜉᜐ᜔ᜃ᜔",
+                "ᜀ\u170Dᜏ᜔ ᜅ᜔ ᜉᜐ᜔ᜃ᜔",
+                "ᜀ\u170Dᜏ᜔ ᜅ᜔ ᜉᜒᜌᜒᜐ᜔ᜆ",
+                "Araw ng Pasko",
+                "ᜀ\u170Dᜏ᜔ ᜅ᜔ ᜉᜐ᜔ᜃ᜔"
         ));
         //11
         questionsModels.add(new HardModel(
-                "ᜐᜌ᜔",
-                "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "ᜉ᜔᜔",
-                "ᜀᜅ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜆᜎ᜔",
-                "ᜏ᜔",
-                "ᜊᜆ",
-                "ᜄ",
-                "ᜋᜆ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "ᜎᜒ",
-                "ᜀ᜔",
-                "ᜁ",
-                "ᜊ",
-                "ᜏ",
-                "ᜏ"
+                "ᜋᜎᜒᜄᜌᜅ᜔ ᜃᜀ\u170Dᜏᜈ᜔",
+                "ᜋᜎᜒᜄᜌᜅ᜔ ᜆoᜈ᜔",
+                "ᜋᜎᜒᜄᜌᜅ᜔ ᜀ\u170Dᜏ᜔",
+                "Maligayang Kaarawan",
+                "ᜋᜎᜒᜄᜌᜅ᜔ ᜃᜀ\u170Dᜏᜈ᜔"
         ));
         //12
         questionsModels.add(new HardModel(
-                "ᜐᜌ᜔",
-                "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "ᜉ᜔᜔",
-                "ᜀᜅ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜆᜎ᜔",
-                "ᜏ᜔",
-                "ᜊᜆ",
-                "ᜄ",
-                "ᜋᜆ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "ᜎᜒ",
-                "ᜀ᜔",
-                "ᜁ",
-                "ᜊ",
-                "ᜇ",
-                "ᜇ"
+                "ᜃᜎᜓᜉᜒᜆᜈ᜔",
+                "ᜃᜐᜒᜌᜑᜈ᜔",
+                "ᜃᜆᜒᜉᜓᜈᜈ᜔",
+                "Katipunan",
+                "ᜃᜆᜒᜉᜓᜈᜈ᜔"
         ));
         //13
         questionsModels.add(new HardModel(
-                "ᜐᜌ᜔",
-                "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "ᜉ᜔᜔",
-                "ᜀᜅ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜆᜎ᜔",
-                "ᜏ᜔",
-                "ᜊᜆ",
-                "ᜄ",
-                "ᜋᜆ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "ᜎᜒ",
-                "ᜀ᜔",
-                "ᜁ",
-                "ᜊ",
-                "ᜊᜆ",
-                "ᜊᜆ"
+                "ᜊᜌᜈᜒ",
+                "ᜊᜌᜈ᜔",
+                "ᜊᜑᜌ᜔",
+                "Bayan",
+                "ᜊᜌᜈ᜔"
         ));
         //14
         questionsModels.add(new HardModel(
-                "ᜐᜌ᜔",
-                "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "ᜉ᜔᜔",
-                "ᜀᜅ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜆᜎ᜔",
-                "ᜏ᜔",
-                "ᜊᜆ",
-                "ᜄ",
-                "ᜋᜆ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "ᜎᜒ",
-                "ᜀ᜔",
-                "ᜁ",
-                "ᜊ",
-                "ᜂ",
-                "ᜂ"
+                "ᜃᜐᜌ᜔ᜐᜌᜈ᜔",
+                "ᜃᜎᜒᜄᜌᜑᜈ᜔",
+                "ᜃᜐᜄᜈᜑᜈ᜔",
+                "Kasaysayan",
+                "ᜃᜐᜌ᜔ᜐᜌᜈ᜔"
         ));
         //15
         questionsModels.add(new HardModel(
-                "ᜐᜌ᜔",
-                "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "ᜉ᜔᜔",
-                "ᜀᜅ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜆᜎ᜔",
-                "ᜏ᜔",
-                "ᜊᜆ",
-                "ᜄ",
-                "ᜋᜆ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "ᜎᜒ",
-                "ᜀ᜔",
-                "ᜁ",
-                "ᜊ",
-                "ᜀ᜔",
-                "ᜀ᜔"
+                "ᜉᜅᜎᜈ᜔",
+                "ᜉᜎᜌᜏ᜔",
+                "ᜉᜎᜌᜈ᜔",
+                "Pangalan",
+                "ᜉᜅᜎᜈ᜔"
         ));
     }
 
@@ -716,28 +356,11 @@ public class HardLevel extends AppCompatActivity {
             _option_1.setText(currentQuestion.getOption1());
             _option_2.setText(currentQuestion.getOption2());
             _option_3.setText(currentQuestion.getOption3());
-            _option_4.setText(currentQuestion.getOption4());
-            _option_5.setText(currentQuestion.getOption5());
-            _option_6.setText(currentQuestion.getOption6());
-            _option_7.setText(currentQuestion.getOption7());
-            _option_8.setText(currentQuestion.getOption8());
-            _option_9.setText(currentQuestion.getOption9());
-            _option_10.setText(currentQuestion.getOption10());
-            _option_11.setText(currentQuestion.getOption11());
-            _option_12.setText(currentQuestion.getOption12());
-            _option_13.setText(currentQuestion.getOption13());
-            _option_14.setText(currentQuestion.getOption14());
-            _option_15.setText(currentQuestion.getOption15());
-            _option_16.setText(currentQuestion.getOption16());
-            _option_17.setText(currentQuestion.getOption17());
-            _option_18.setText(currentQuestion.getOption18());
-            _option_19.setText(currentQuestion.getOption19());
-            _option_20.setText(currentQuestion.getOption20());
             _symbol.setText(currentQuestion.getQuestion());
             answer = currentQuestion.getAnswer();
 
             currentNoOfTest++;
-            questionCount.setText("Question: " + currentNoOfTest + "/" + totalNoOfTest);
+            questionCount.setText("Mga tanong: " + currentNoOfTest + "/" + totalNoOfTest);
             isAnswered = false;
         } else {
             countDownTimer.cancel();
@@ -765,11 +388,11 @@ public class HardLevel extends AppCompatActivity {
         total_score.setText(String.valueOf(score));
 
         if(score <= 3) {
-            score_text.setText("Oh hindi! ikaw ay may pinakamababang iskor!");
+            score_text.setText("Oh hindi! ikaw ay may pinakamababang puntos!");
             anim.setAnimation(R.raw.sadface);
             anim.playAnimation();
         }else {
-            score_text.setText("Mayroon kang Pinakamataas na Score. Magaling ka!");
+            score_text.setText("Mayroon kang Pinakamataas na puntos. Magaling ka!");
             anim.setAnimation(R.raw.congrats);
             anim.playAnimation();
         }
@@ -797,23 +420,6 @@ public class HardLevel extends AppCompatActivity {
         _option_1 = findViewById(R.id.option_1);
         _option_2 = findViewById(R.id.option_2);
         _option_3 = findViewById(R.id.option_3);
-        _option_4 = findViewById(R.id.option_4);
-        _option_5 = findViewById(R.id.option_5);
-        _option_6 = findViewById(R.id.option_6);
-        _option_7 = findViewById(R.id.option_7);
-        _option_8 = findViewById(R.id.option_8);
-        _option_9 = findViewById(R.id.option_9);
-        _option_10 = findViewById(R.id.option_10);
-        _option_11 = findViewById(R.id.option_11);
-        _option_12 = findViewById(R.id.option_12);
-        _option_13 = findViewById(R.id.option_13);
-        _option_14 = findViewById(R.id.option_14);
-        _option_15 = findViewById(R.id.option_15);
-        _option_16 = findViewById(R.id.option_16);
-        _option_17 = findViewById(R.id.option_17);
-        _option_18 = findViewById(R.id.option_18);
-        _option_19 = findViewById(R.id.option_19);
-        _option_20 = findViewById(R.id.option_20);
         questionCount = findViewById(R.id.questionCount);
         submitBtn = findViewById(R.id.submitBtn);
         score_tv = findViewById(R.id.score);

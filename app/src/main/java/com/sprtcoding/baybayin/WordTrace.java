@@ -102,7 +102,7 @@ public class WordTrace extends AppCompatActivity {
             Runnable runnable = () -> {
                 loadingDialog.dismiss();
                 // Set the video file path or URL
-                String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.da;
+                String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.da_ra;
                 videoURI = Uri.parse(videoPath);
                 showVideoDialog(videoURI, "DA");
             };

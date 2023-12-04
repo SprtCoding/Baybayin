@@ -90,7 +90,7 @@ public class EasyLevel extends AppCompatActivity {
             answer = currentQuestion.getAnswer();
 
             currentNoOfTest++;
-            questionCount.setText("Question: " + currentNoOfTest + "/" + totalNoOfTest);
+            questionCount.setText("Mga tanong: " + currentNoOfTest + "/" + totalNoOfTest);
             isAnswered = false;
         } else {
             countDownTimer.cancel();
@@ -190,7 +190,7 @@ public class EasyLevel extends AppCompatActivity {
             Toast.makeText(this, "Pumili ng sagot.", Toast.LENGTH_SHORT).show();
         } else if (options.get(0).getSelectedAnswer().equals(answer)) {
             score++;
-            score_tv.setText("Score: " + score);
+            score_tv.setText("Puntos: " + score);
             showCorrectDialog();
 
             // Change the background color of the selected option back to its original color
@@ -447,11 +447,11 @@ public class EasyLevel extends AppCompatActivity {
         total_score.setText(String.valueOf(score));
 
         if(score <= 3) {
-            score_text.setText("Oh hindi! ikaw ay may pinakamababang iskor!");
+            score_text.setText("Oh hindi! ikaw ay may pinakamababang puntos!");
             anim.setAnimation(R.raw.sadface);
             anim.playAnimation();
         }else {
-            score_text.setText("Mayroon kang Pinakamataas na Score. Magaling ka!");
+            score_text.setText("Mayroon kang Pinakamataas na puntos. Magaling ka!");
             anim.setAnimation(R.raw.congrats);
             anim.playAnimation();
         }

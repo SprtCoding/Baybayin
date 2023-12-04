@@ -32,9 +32,7 @@ import java.util.concurrent.TimeUnit;
 
 public class ModerateLevel extends AppCompatActivity {
     private TextView questionCount, _timerCount, _symbol, _option_1, _option_2, _option_3, _option_4, _option_5
-            , _option_6, _option_7, _option_8, _option_9, _option_10, _option_11, _option_12
-            , _option_13, _option_14, _option_15, _option_16
-            , lastBtnClicked = null, score_tv, total_score, score_text;
+            , _option_6, _option_7, _option_8, lastBtnClicked = null, score_tv, total_score, score_text;
     private MaterialButton _yes_btn, _no_btn, submitBtn, _next_btn, _ok_btn;
     private LottieAnimationView anim;
     private int currentNoOfTest, totalNoOfTest, score = 0;
@@ -123,10 +121,10 @@ public class ModerateLevel extends AppCompatActivity {
     private void getAnswer(String answer) {
         if (options.isEmpty()) {
             // No option is selected, show a toast
-            Toast.makeText(this, "Please select an answer.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Hanapin ang sagot, bago magpatuloy.", Toast.LENGTH_SHORT).show();
         } else if (options.get(0).getSelectedAnswer().equals(answer)) {
             score++;
-            score_tv.setText("Score: " + score);
+            score_tv.setText("Puntos: " + score);
             showCorrectDialog();
 
             // Change the background color of the selected option back to its original color
@@ -155,7 +153,7 @@ public class ModerateLevel extends AppCompatActivity {
         _next_btn = correctDialog.findViewById(R.id.next_btn);
         final AlertDialog correctsDialog = correctDialogBuilder.create();
 
-        correctsDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Objects.requireNonNull(correctsDialog.getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         correctsDialog.setCanceledOnTouchOutside(false);
 
         _next_btn.setOnClickListener(view -> {
@@ -235,54 +233,6 @@ public class ModerateLevel extends AppCompatActivity {
             setAnswer(option);
             changeButtonBackground(_option_8);
         });
-
-        _option_9.setOnClickListener(view -> {
-            String option = _option_9.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_9);
-        });
-
-        _option_10.setOnClickListener(view -> {
-            String option = _option_10.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_10);
-        });
-
-        _option_11.setOnClickListener(view -> {
-            String option = _option_11.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_11);
-        });
-
-        _option_12.setOnClickListener(view -> {
-            String option = _option_12.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_12);
-        });
-
-        _option_13.setOnClickListener(view -> {
-            String option = _option_13.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_13);
-        });
-
-        _option_14.setOnClickListener(view -> {
-            String option = _option_14.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_14);
-        });
-
-        _option_15.setOnClickListener(view -> {
-            String option = _option_15.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_15);
-        });
-
-        _option_16.setOnClickListener(view -> {
-            String option = _option_16.getText().toString();
-            setAnswer(option);
-            changeButtonBackground(_option_16);
-        });
     }
 
     private void setAnswer(String option) {
@@ -310,213 +260,133 @@ public class ModerateLevel extends AppCompatActivity {
     private void addQuestions() {
         //1
         questionsModels.add(new ModerateModel(
-                "ᜉ᜔",
+                "ha",
+                "e/i",
+                "la",
+                "o/u",
+                "a",
+                "ma",
+                "ya",
+                "wa",
                 "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "\u170D᜔᜔",
-                "ᜐ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜎ᜔",
-                "ᜏ᜔",
-                "ᜃ",
-                "ᜄ",
-                "ᜅ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "ᜆ",
-                "ᜆ"
+                "a"
         ));
         //2
         questionsModels.add(new ModerateModel(
-                "ᜉ᜔",
-                "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "\u170D᜔᜔",
-                "ᜐ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜎ᜔",
-                "ᜏ᜔",
-                "ᜃ",
-                "ᜄ",
-                "ᜅ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "ᜀ",
-                "ᜀ"
+                "ga",
+                "ma",
+                "e/i",
+                "wa",
+                "ya",
+                "a",
+                "nga",
+                "o/u",
+                "ᜄ᜔",
+                "ga"
         ));
         //3
         questionsModels.add(new ModerateModel(
-                "ᜉ᜔",
-                "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "\u170D᜔᜔",
-                "ᜐ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜊ᜔",
-                "ᜏ᜔",
-                "ᜃ",
-                "ᜄ",
-                "ᜅ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "ᜊ᜔",
-                "ᜊ᜔"
+                "pa",
+                "ga",
+                "nga",
+                "e/i",
+                "o/u",
+                "ba",
+                "ma",
+                "wa",
+                "ᜊ",
+                "ba"
         ));
         //4
         questionsModels.add(new ModerateModel(
-                "ᜉ᜔",
-                "ᜀ",
+                "a",
+                "e/i",
+                "nga",
+                "la",
+                "o/u",
+                "ba",
+                "wa",
+                "sa",
                 "ᜁ",
-                "ᜂ",
-                "\u170D᜔᜔",
-                "ᜐ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜊ᜔",
-                "ᜏ᜔",
-                "ᜃ",
-                "ᜑ",
-                "ᜅ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "ᜑ",
-                "ᜑ"
+                "e/i"
         ));
         //5
         questionsModels.add(new ModerateModel(
-                "ᜉ᜔",
-                "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "\u170D᜔᜔",
-                "ᜐ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜊ᜔",
-                "ᜏ᜔",
-                "ᜃ",
-                "ᜑ",
-                "ᜅ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "ᜃ",
-                "ᜃ"
+                "nga",
+                "na",
+                "la",
+                "ga",
+                "o/u",
+                "ka",
+                "ha",
+                "ta",
+                "ᜎ",
+                "la"
         ));
         //6
         questionsModels.add(new ModerateModel(
-                "ᜉ᜔",
-                "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "\u170D᜔᜔",
-                "ᜐ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜊ᜔",
-                "ᜏ᜔",
-                "ᜃ",
-                "ᜑ",
-                "ᜅ",
-                "ᜆ",
-                "ᜇ",
+                "a",
+                "ta",
+                "la",
+                "wa",
+                "ya",
+                "da/ra",
+                "na",
+                "sa",
                 "ᜈ",
-                "ᜉ᜔",
-                "ᜉ᜔"
+                "na"
         ));
         //7
         questionsModels.add(new ModerateModel(
-                "ᜉ᜔",
-                "ᜀ",
-                "ᜁ",
+                "e/i",
+                "sa",
+                "na",
+                "o/u",
+                "nga",
+                "ha",
+                "ka",
+                "ma",
                 "ᜂ",
-                "\u170D᜔᜔",
-                "ᜐ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜊ᜔",
-                "ᜏ᜔",
-                "ᜃ",
-                "ᜑ",
-                "ᜅ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "\u170D᜔",
-                "\u170D᜔"
+                "o/u"
         ));
         //8
         questionsModels.add(new ModerateModel(
-                "ᜉ᜔",
-                "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "\u170D᜔᜔",
-                "ᜐ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜊ᜔",
-                "ᜏ᜔",
-                "ᜃ",
-                "ᜑ",
-                "ᜅ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "ᜈ",
-                "ᜈ"
+                "sa",
+                "a",
+                "nga",
+                "ba",
+                "ha",
+                "da/ra",
+                "wa",
+                "la",
+                "ᜐ",
+                "sa"
         ));
         //9
         questionsModels.add(new ModerateModel(
-                "ᜉ᜔",
-                "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "\u170D᜔᜔",
-                "ᜐ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜊ᜔",
-                "ᜏ᜔",
-                "ᜃ",
-                "ᜑ",
-                "ᜅ",
-                "ᜆ",
+                "ha",
+                "sa",
+                "la",
+                "da/ra",
+                "ya",
+                "nga",
+                "wa",
+                "pa",
                 "ᜇ",
-                "ᜈ",
-                "ᜉ᜔",
-                "ᜉ᜔"
+                "da/ra"
         ));
         //10
         questionsModels.add(new ModerateModel(
-                "ᜉ᜔",
-                "ᜀ",
-                "ᜁ",
-                "ᜂ",
-                "\u170D᜔᜔",
-                "ᜐ᜔",
-                "ᜉ᜔",
-                "ᜆ",
-                "ᜊ᜔",
-                "ᜏ᜔",
-                "ᜃ",
-                "ᜑ",
-                "ᜅ",
-                "ᜆ",
-                "ᜇ",
-                "ᜈ",
-                "ᜐ᜔",
-                "ᜐ᜔"
+                "a",
+                "ba",
+                "la",
+                "ya",
+                "wa",
+                "ha",
+                "sa",
+                "pa",
+                "ᜉ",
+                "pa"
         ));
     }
 
@@ -533,19 +403,11 @@ public class ModerateLevel extends AppCompatActivity {
             _option_6.setText(currentQuestion.getOption6());
             _option_7.setText(currentQuestion.getOption7());
             _option_8.setText(currentQuestion.getOption8());
-            _option_9.setText(currentQuestion.getOption9());
-            _option_10.setText(currentQuestion.getOption10());
-            _option_11.setText(currentQuestion.getOption11());
-            _option_12.setText(currentQuestion.getOption12());
-            _option_13.setText(currentQuestion.getOption13());
-            _option_14.setText(currentQuestion.getOption14());
-            _option_15.setText(currentQuestion.getOption15());
-            _option_16.setText(currentQuestion.getOption16());
             _symbol.setText(currentQuestion.getQuestion());
             answer = currentQuestion.getAnswer();
 
             currentNoOfTest++;
-            questionCount.setText("Question: " + currentNoOfTest + "/" + totalNoOfTest);
+            questionCount.setText("Mga tanong: " + currentNoOfTest + "/" + totalNoOfTest);
             isAnswered = false;
         } else {
             countDownTimer.cancel();
@@ -573,11 +435,11 @@ public class ModerateLevel extends AppCompatActivity {
         total_score.setText(String.valueOf(score));
 
         if(score <= 3) {
-            score_text.setText("Oh hindi! ikaw ay may pinakamababang iskor!");
+            score_text.setText("Oh hindi! ikaw ay may pinakamababang puntos!");
             anim.setAnimation(R.raw.sadface);
             anim.playAnimation();
         }else {
-            score_text.setText("Mayroon kang Pinakamataas na Score. Magaling ka!");
+            score_text.setText("Mayroon kang Pinakamataas na puntos. Magaling ka!");
             anim.setAnimation(R.raw.congrats);
             anim.playAnimation();
         }
@@ -610,14 +472,6 @@ public class ModerateLevel extends AppCompatActivity {
         _option_6 = findViewById(R.id.option_6);
         _option_7 = findViewById(R.id.option_7);
         _option_8 = findViewById(R.id.option_8);
-        _option_9 = findViewById(R.id.option_9);
-        _option_10 = findViewById(R.id.option_10);
-        _option_11 = findViewById(R.id.option_11);
-        _option_12 = findViewById(R.id.option_12);
-        _option_13 = findViewById(R.id.option_13);
-        _option_14 = findViewById(R.id.option_14);
-        _option_15 = findViewById(R.id.option_15);
-        _option_16 = findViewById(R.id.option_16);
         questionCount = findViewById(R.id.questionCount);
         submitBtn = findViewById(R.id.submitBtn);
         score_tv = findViewById(R.id.score);

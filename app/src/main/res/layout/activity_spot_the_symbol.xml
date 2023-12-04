@@ -40,49 +40,28 @@
                 app:tint="@color/wht" />
 
             <LinearLayout
+                android:padding="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="@dimen/_220sdp"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:text="Hanapin Ang Simbolo"
+                    android:textSize="@dimen/_20ssp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/wht"/>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Hanapin Ang Simbolo"
-                        android:textSize="@dimen/_18ssp"
-                        android:fontFamily="@font/poppins_bold"
-                        android:textColor="@color/wht"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Mga Kategorya"
-                        android:textSize="@dimen/_12ssp"
-                        android:fontFamily="@font/poppins_medium"
-                        android:textColor="@color/wht"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Hanapin Ang Simbolo"
-                        android:textSize="@dimen/_10ssp"
-                        android:fontFamily="@font/tagalogstylized"
-                        android:textColor="@color/wht"/>
-
-                </LinearLayout>
-
-                <ImageView
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_width="@dimen/_50sdp"
-                    android:layout_height="@dimen/_50sdp"
-                    android:src="@drawable/tap"
-                    android:contentDescription="@string/app_name"
-                    app:tint="@color/wht" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ang larong ito ay naglalaman ng tatlong kategorya ito ang madali, katamtaman at mahirap. Sa larong ito upang maka kuha ng puntos ay hahanapin ng manlalaro ang isang magkatugmang simbolo sa bawat kategorya."
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="italic"
+                    android:justificationMode="inter_word"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/wht"/>
 
             </LinearLayout>
 

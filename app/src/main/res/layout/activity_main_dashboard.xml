@@ -149,7 +149,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Kasaysayan"
+                            android:text="ᜃᜐᜌ᜔ᜐᜌᜈ᜔"
                             android:fontFamily="@font/tagalogstylized"
                             android:textSize="@dimen/_12ssp"
                             android:textColor="#656565"/>
@@ -211,7 +211,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Matuto"
+                            android:text="ᜋᜆᜓᜆ᜔o"
                             android:fontFamily="@font/tagalogstylized"
                             android:textSize="@dimen/_12ssp"
                             android:textColor="#656565"/>
@@ -273,7 +273,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Tagasalin"
+                            android:text="ᜆᜄᜐᜎᜒᜈ᜔"
                             android:fontFamily="@font/tagalogstylized"
                             android:textSize="@dimen/_12ssp"
                             android:textColor="#656565"/>
@@ -335,7 +335,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Laro"
+                            android:text="ᜎᜍ᜔"
                             android:fontFamily="@font/tagalogstylized"
                             android:textSize="@dimen/_12ssp"
                             android:textColor="#656565"/>
@@ -397,7 +397,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Nagdebelop"
+                            android:text="ᜈᜄ᜔ᜇᜒᜊᜒᜎ᜔oᜉ᜔"
                             android:fontFamily="@font/tagalogstylized"
                             android:textSize="@dimen/_12ssp"
                             android:textColor="#656565"/>
