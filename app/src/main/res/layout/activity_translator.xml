@@ -104,9 +104,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Naisaling letra"
-            android:textSize="60sp"
+            android:textSize="40sp"
             android:textAlignment="center"
-            android:fontFamily="@font/poppins_bold"
+            android:fontFamily="@font/tagalogstylized"
             android:textColor="@color/wht"/>
 
         <EditText
@@ -119,7 +119,7 @@
             android:background="@drawable/inputbg"
             android:inputType="text"
             android:textAlignment="center"
-            android:hint="Enter tagalog text"
+            android:hint="Ilagay ang tagalog na salita"
             android:fontFamily="@font/poppins_medium"
             android:textColorHint="#BABABA"
             android:textColor="@color/wht"/>

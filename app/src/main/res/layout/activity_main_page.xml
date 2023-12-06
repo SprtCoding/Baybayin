@@ -63,28 +63,18 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_bold"
-                            android:textAlignment="center"
                             android:text="Pangkalahatang ideya"
                             android:textColor="@color/wht"
-                            android:textSize="@dimen/_12ssp" />
+                            android:textSize="@dimen/_13ssp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/baloo"
+                            android:fontFamily="@font/tagalogstylized"
                             android:textColor="#FF5E5E"
                             android:textAlignment="center"
-                            android:text="(oᜊᜒᜍ᜔ᜊᜒᜁᜏ᜔)"
+                            android:text="oᜊᜒᜍ᜔ᜊᜒᜁᜏ᜔"
                             android:textSize="@dimen/_12ssp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/garet"
-                            android:text="(Overview)"
-                            android:textAlignment="center"
-                            android:textColor="@color/wht"
-                            android:textSize="@dimen/_10ssp" />
 
                     </LinearLayout>
 

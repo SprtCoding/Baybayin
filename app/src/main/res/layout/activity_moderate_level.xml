@@ -107,7 +107,8 @@
                 android:textColor="@color/white"
                 android:layout_gravity="center"
                 android:textSize="70sp"
-                android:fontFamily="@font/poppins_bold"/>
+                android:padding="40dp"
+                android:fontFamily="@font/tagalogstylized"/>
 
             <GridLayout
                 android:scrollbars="vertical"

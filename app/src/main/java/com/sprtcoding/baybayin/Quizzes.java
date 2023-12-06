@@ -119,7 +119,7 @@ public class Quizzes extends AppCompatActivity {
 
         if(answerNr == currentQuestion.getAnswerNr()) {
             score++;
-            _viewScore.setText("Score: " + score);
+            _viewScore.setText("Puntos: " + score);
         }
         showSolution();
     }
@@ -168,7 +168,7 @@ public class Quizzes extends AppCompatActivity {
             _rb3.setText(currentQuestion.getOption3());
 
             questionCounter++;
-            _questionCount.setText("Question: " + questionCounter + "/" + questionCountTotal);
+            _questionCount.setText("Mga tanong: " + questionCounter + "/" + questionCountTotal);
             isAnswered = false;
             _btnSubmitNext.setText("Ipasa");
         } else {

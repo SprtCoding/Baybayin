@@ -80,7 +80,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pagsusulit"
+                        android:text="Pᜀᜄ᜔ᜐᜓᜐᜓᜎᜒᜆ᜔"
                         android:textSize="@dimen/_10ssp"
                         android:fontFamily="@font/tagalogstylized"
                         android:textColor="@color/wht"/>
